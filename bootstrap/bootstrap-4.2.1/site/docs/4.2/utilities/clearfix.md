@@ -24,7 +24,7 @@ Easily clear `float`s by adding `.clearfix` **to the parent element**. Can also 
 
 // Usage as a mixin
 .element {
-  @_includes clearfix;
+  @includes clearfix;
 }
 {% endhighlight %}
 
@@ -36,4 +36,4 @@ The following example shows how the clearfix can be used. Without the clearfix t
   <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}

@@ -10,12 +10,12 @@
   .page-item {
     &:first-child {
       .page-link {
-        @_includes border-left-radius($border-radius);
+        @includes border-left-radius($border-radius);
       }
     }
     &:last-child {
       .page-link {
-        @_includes border-right-radius($border-radius);
+        @includes border-right-radius($border-radius);
       }
     }
   }

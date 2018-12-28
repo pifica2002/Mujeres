@@ -49,7 +49,7 @@ There are two `z-index` scales in Bootstrap—elements within a component and ov
 
 ### Overlay components
 
-Bootstrap _includess several components that function as an overlay of some kind. This _includess, in order of highest `z-index`, dropdowns, fixed and sticky navbars, modals, tooltips, and popovers. These components have their own `z-index` scale that begins at `1000`. This starting number is random and serves as a small buffer between our styles and your project's custom styles.
+Bootstrap includess several components that function as an overlay of some kind. This includess, in order of highest `z-index`, dropdowns, fixed and sticky navbars, modals, tooltips, and popovers. These components have their own `z-index` scale that begins at `1000`. This starting number is random and serves as a small buffer between our styles and your project's custom styles.
 
 Each overlay component increases it's `z-index` value slightly in such a way that common UI principles allow user focused or hovered elements to remain in view at all times. For example, a modal is document blocking (e.g., you cannot take any other action save for the modal's action), so we put that above our navbars.
 

@@ -8,9 +8,9 @@ toc: true
 
 ## Overview
 
-Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They're made interactive with the _includesd Bootstrap dropdown JavaScript plugin. They're toggled by clicking, not by hovering; this is [an intentional design decision](http://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/).
+Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They're made interactive with the includesd Bootstrap dropdown JavaScript plugin. They're toggled by clicking, not by hovering; this is [an intentional design decision](http://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/).
 
-Dropdowns are built on a third party library, [Popper.js](https://popper.js.org/), which provides dynamic positioning and viewport detection. Be sure to _includes [popper.min.js]({{ site.cdn.popper }}) before Bootstrap's JavaScript or use `bootstrap.bundle.min.js` / `bootstrap.bundle.js` which contains Popper.js. Popper.js isn't used to position dropdowns in navbars though as dynamic positioning isn't required.
+Dropdowns are built on a third party library, [Popper.js](https://popper.js.org/), which provides dynamic positioning and viewport detection. Be sure to includes [popper.min.js]({{ site.cdn.popper }}) before Bootstrap's JavaScript or use `bootstrap.bundle.min.js` / `bootstrap.bundle.js` which contains Popper.js. Popper.js isn't used to position dropdowns in navbars though as dynamic positioning isn't required.
 
 If you're building our JavaScript from source, it [requires `util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#util).
 
@@ -18,7 +18,7 @@ If you're building our JavaScript from source, it [requires `util.js`]({{ site.b
 
 The [<abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr>](https://www.w3.org/TR/wai-aria/) standard defines an actual [`role="menu"` widget](https://www.w3.org/WAI/PF/aria/roles#menu), but this is specific to application-like menus which trigger actions or functions. <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups, and sub-menus.
 
-Bootstrap's dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Bootstrap does not expect (nor automatically add) any of the `role` and `aria-` attributes required for true <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus. Authors will have to _includes these more specific attributes themselves.
+Bootstrap's dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Bootstrap does not expect (nor automatically add) any of the `role` and `aria-` attributes required for true <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus. Authors will have to includes these more specific attributes themselves.
 
 However, Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual `.dropdown-item` elements using the cursor keys and close the menu with the <kbd>ESC</kbd> key.
 
@@ -42,7 +42,7 @@ Any single `.btn` can be turned into a dropdown toggle with some markup changes.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 And with `<a>` elements:
 
@@ -59,7 +59,7 @@ And with `<a>` elements:
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 The best part is you can do this with any button variant, too:
 
@@ -553,7 +553,7 @@ Historically dropdown menu contents *had* to be links, but that's no longer the 
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 You can also create non-interactive dropdown items with `.dropdown-item-text`. Feel free to style further with custom CSS or text utilities.
 
@@ -565,7 +565,7 @@ You can also create non-interactive dropdown items with `.dropdown-item-text`. F
   <a class="dropdown-item" href="#">Something else here</a>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Active
 
@@ -578,7 +578,7 @@ Add `.active` to items in the dropdown to **style them as active**.
   <a class="dropdown-item" href="#">Another link</a>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Disabled
 
@@ -591,7 +591,7 @@ Add `.disabled` to items in the dropdown to **style them as disabled**.
   <a class="dropdown-item" href="#">Another link</a>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Menu alignment
 
@@ -600,7 +600,7 @@ By default, a dropdown menu is automatically positioned 100% from the top and al
 {% capture callout %}
 **Heads up!** Dropdowns are positioned thanks to Popper.js (except when they are contained in a navbar).
 {% endcapture %}
-{% _includes callout.html content=callout type="info" %}
+{% includes callout.html content=callout type="info" %}
 
 {% capture example %}
 <div class="btn-group">
@@ -614,7 +614,7 @@ By default, a dropdown menu is automatically positioned 100% from the top and al
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Responsive alignment
 
@@ -634,7 +634,7 @@ To align **right** the dropdown menu with the given breakpoint or larger, add `.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 To align **left** the dropdown menu with the given breakpoint or larger, add `.dropdown-menu-right` and `.dropdown-menu{-sm|-md|-lg|-xl}-left`.
 
@@ -650,7 +650,7 @@ To align **left** the dropdown menu with the given breakpoint or larger, add `.d
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 Note that you don't need to add a `data-display="static"` attribute to dropdown buttons in navbars, since Popper.js isn't used in navbars.
 
@@ -667,7 +667,7 @@ Add a header to label sections of actions in any dropdown menu.
   <a class="dropdown-item" href="#">Another action</a>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Dividers
 
@@ -682,7 +682,7 @@ Separate groups of related menu items with a divider.
   <a class="dropdown-item" href="#">Separated link</a>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Text
 
@@ -698,7 +698,7 @@ Place any freeform text within a dropdown menu with text and use [spacing utilit
   </p>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Forms
 
@@ -730,7 +730,7 @@ Put a form within a dropdown menu, or make it into a dropdown menu, and use [mar
   <a class="dropdown-item" href="#">Forgot password?</a>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture example %}
 <form class="dropdown-menu p-4">
@@ -753,7 +753,7 @@ Put a form within a dropdown menu, or make it into a dropdown menu, and use [mar
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Dropdown options
 
@@ -786,7 +786,7 @@ Use `data-offset` or `data-reference` to change the location of the dropdown.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Usage
 
@@ -795,7 +795,7 @@ Via data attributes or JavaScript, the dropdown plugin toggles hidden content (d
 {% capture callout %}
 On touch-enabled devices, opening a dropdown adds empty (`$.noop`) `mouseover` handlers to the immediate children of the `<body>` element. This admittedly ugly hack is necessary to work around a [quirk in iOS' event delegation](https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html), which would otherwise prevent a tap anywhere outside of the dropdown from triggering the code that closes the dropdown. Once the dropdown is closed, these additional empty `mouseover` handlers are removed.
 {% endcapture %}
-{% _includes callout.html content=callout type="info" %}
+{% includes callout.html content=callout type="info" %}
 
 ### Via data attributes
 
@@ -825,7 +825,7 @@ $('.dropdown-toggle').dropdown()
 
 Regardless of whether you call your dropdown via JavaScript or instead use the data-api, `data-toggle="dropdown"` is always required to be present on the dropdown's trigger element.
 {% endcapture %}
-{% _includes callout.html content=callout type="info" %}
+{% includes callout.html content=callout type="info" %}
 
 ### Options
 

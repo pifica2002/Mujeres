@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Contents
-description: Discover what's _includesd in Bootstrap, including our precompiled and source code flavors. Remember, Bootstrap's JavaScript plugins require jQuery.
+description: Discover what's includesd in Bootstrap, including our precompiled and source code flavors. Remember, Bootstrap's JavaScript plugins require jQuery.
 group: getting-started
 toc: true
 ---
@@ -38,11 +38,11 @@ bootstrap/
     └── bootstrap.min.js.map
 {% endhighlight %}
 
-This is the most basic form of Bootstrap: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) _includes [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
+This is the most basic form of Bootstrap: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) includes [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
 
 ## CSS files
 
-Bootstrap _includess a handful of options for including some or all of our compiled CSS.
+Bootstrap includess a handful of options for including some or all of our compiled CSS.
 
 <table class="table table-bordered">
   <thead>
@@ -60,10 +60,10 @@ Bootstrap _includess a handful of options for including some or all of our compi
         <div><code class="font-weight-normal text-nowrap">bootstrap.css</code></div>
         <div><code class="font-weight-normal text-nowrap">bootstrap.min.css</code></div>
       </th>
-      <td class="text-success">_includesd</td>
-      <td class="text-success">_includesd</td>
-      <td class="text-success">_includesd</td>
-      <td class="text-success">_includesd</td>
+      <td class="text-success">includesd</td>
+      <td class="text-success">includesd</td>
+      <td class="text-success">includesd</td>
+      <td class="text-success">includesd</td>
     </tr>
     <tr>
       <th scope="row">
@@ -71,8 +71,8 @@ Bootstrap _includess a handful of options for including some or all of our compi
         <div><code class="font-weight-normal text-nowrap">bootstrap-grid.min.css</code></div>
       </th>
       <td><a class="text-warning" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/layout/grid/">Only grid system</a></td>
-      <td class="bg-light text-muted">Not _includesd</td>
-      <td class="bg-light text-muted">Not _includesd</td>
+      <td class="bg-light text-muted">Not includesd</td>
+      <td class="bg-light text-muted">Not includesd</td>
       <td><a class="text-warning" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/flex/">Only flex utilities</a></td>
     </tr>
     <tr>
@@ -80,10 +80,10 @@ Bootstrap _includess a handful of options for including some or all of our compi
         <div><code class="font-weight-normal text-nowrap">bootstrap-reboot.css</code></div>
         <div><code class="font-weight-normal text-nowrap">bootstrap-reboot.min.css</code></div>
       </th>
-      <td class="bg-light text-muted">Not _includesd</td>
+      <td class="bg-light text-muted">Not includesd</td>
       <td><a class="text-warning" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/content/reboot/">Only Reboot</a></td>
-      <td class="bg-light text-muted">Not _includesd</td>
-      <td class="bg-light text-muted">Not _includesd</td>
+      <td class="bg-light text-muted">Not includesd</td>
+      <td class="bg-light text-muted">Not includesd</td>
     </tr>
   </tbody>
 </table>
@@ -106,23 +106,23 @@ Similarly, we have options for including some or all of our compiled JavaScript.
         <div><code class="font-weight-normal text-nowrap">bootstrap.bundle.js</code></div>
         <div><code class="font-weight-normal text-nowrap">bootstrap.bundle.min.js</code></div>
       </th>
-      <td class="text-success">_includesd</td>
-      <td class="bg-light text-muted">Not _includesd</td>
+      <td class="text-success">includesd</td>
+      <td class="bg-light text-muted">Not includesd</td>
     </tr>
     <tr>
       <th scope="row">
         <div><code class="font-weight-normal text-nowrap">bootstrap.js</code></div>
         <div><code class="font-weight-normal text-nowrap">bootstrap.min.js</code></div>
       </th>
-      <td class="bg-light text-muted">Not _includesd</td>
-      <td class="bg-light text-muted">Not _includesd</td>
+      <td class="bg-light text-muted">Not includesd</td>
+      <td class="bg-light text-muted">Not includesd</td>
     </tr>
   </tbody>
 </table>
 
 ## Bootstrap source code
 
-The Bootstrap source code download _includess the precompiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it _includess the following and more:
+The Bootstrap source code download includess the precompiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includess the following and more:
 
 {% highlight plaintext %}
 bootstrap/
@@ -137,4 +137,4 @@ bootstrap/
 └── scss/
 {% endhighlight %}
 
-The `scss/` and `js/` are the source code for our CSS and JavaScript. The `dist/` folder _includess everything listed in the precompiled download section above. The `site/docs/` folder _includess the source code for our documentation, and `examples/` of Bootstrap usage. Beyond that, any other _includesd file provides support for packages, license information, and development.
+The `scss/` and `js/` are the source code for our CSS and JavaScript. The `dist/` folder includess everything listed in the precompiled download section above. The `site/docs/` folder includess the source code for our documentation, and `examples/` of Bootstrap usage. Beyond that, any other includesd file provides support for packages, license information, and development.

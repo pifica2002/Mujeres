@@ -8,7 +8,7 @@ toc: true
 
 ## Introduction
 
-In Bootstrap 3, theming was largely driven by variable overrides in LESS, custom CSS, and a separate theme stylesheet that we _includesd in our `dist` files. With some effort, one could completely redesign the look of Bootstrap 3 without touching the core files. Bootstrap 4 provides a familiar, but slightly different approach.
+In Bootstrap 3, theming was largely driven by variable overrides in LESS, custom CSS, and a separate theme stylesheet that we includesd in our `dist` files. With some effort, one could completely redesign the look of Bootstrap 3 without touching the core files. Bootstrap 4 provides a familiar, but slightly different approach.
 
 Now, theming is accomplished by Sass variables, Sass maps, and custom CSS. There's no more dedicated theme stylesheet; instead, you can enable the built-in theme to add gradients, shadows, and more.
 
@@ -43,18 +43,18 @@ your-project/
 
 ### Importing
 
-In your `custom.scss`, you'll import Bootstrap's source Sass files. You have two options: _includes all of Bootstrap, or pick the parts you need. We encourage the latter, though be aware there are some requirements and dependencies across our components. You also will need to _includes some JavaScript for our plugins.
+In your `custom.scss`, you'll import Bootstrap's source Sass files. You have two options: includes all of Bootstrap, or pick the parts you need. We encourage the latter, though be aware there are some requirements and dependencies across our components. You also will need to includes some JavaScript for our plugins.
 
 {% highlight scss %}
 // Custom.scss
-// Option A: _includes all of Bootstrap
+// Option A: includes all of Bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 {% endhighlight %}
 
 {% highlight scss %}
 // Custom.scss
-// Option B: _includes parts of Bootstrap
+// Option B: includes parts of Bootstrap
 
 // Required
 @import "../node_modules/bootstrap/scss/functions";
@@ -73,7 +73,7 @@ With that setup in place, you can begin to modify any of the Sass variables and 
 
 ### Variable defaults
 
-Every Sass variable in Bootstrap 4 _includess the `!default` flag allowing you to override the variable's default value in your own Sass without modifying Bootstrap's source code. Copy and paste variables as needed, modify their values, and remove the `!default` flag. If a variable has already been assigned, then it won't be re-assigned by the default values in Bootstrap.
+Every Sass variable in Bootstrap 4 includess the `!default` flag allowing you to override the variable's default value in your own Sass without modifying Bootstrap's source code. Copy and paste variables as needed, modify their values, and remove the `!default` flag. If a variable has already been assigned, then it won't be re-assigned by the default values in Bootstrap.
 
 You will find the complete list of Bootstrap's variables in `scss/_variables.scss`.
 
@@ -94,7 +94,7 @@ Repeat as necessary for any variable in Bootstrap, including the global options 
 
 ### Maps and loops
 
-Bootstrap 4 _includess a handful of Sass maps, key value pairs that make it easier to generate families of related CSS. We use Sass maps for our colors, grid breakpoints, and more. Just like Sass variables, all Sass maps _includes the `!default` flag and can be overridden and extended.
+Bootstrap 4 includess a handful of Sass maps, key value pairs that make it easier to generate families of related CSS. We use Sass maps for our colors, grid breakpoints, and more. Just like Sass variables, all Sass maps includes the `!default` flag and can be overridden and extended.
 
 Some of our Sass maps are merged into empty ones by default. This is done to allow easy expansion of a given Sass map, but comes at the cost of making _removing_ items from a map slightly more difficult.
 
@@ -140,13 +140,13 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
 
 #### Required keys
 
-Bootstrap assumes the presence of some specific keys within Sass maps as we used and extend these ourselves. As you customize the _includesd maps, you may encounter errors where a specific Sass map's key is being used.
+Bootstrap assumes the presence of some specific keys within Sass maps as we used and extend these ourselves. As you customize the includesd maps, you may encounter errors where a specific Sass map's key is being used.
 
 For example, we use the `primary`, `success`, and `danger` keys from `$theme-colors` for links, buttons, and form states. Replacing the values of these keys should present no issues, but removing them may cause Sass compilation issues. In these instances, you'll need to modify the Sass code that makes use of those values.
 
 ### Functions
 
-Bootstrap utilizes several Sass functions, but only a subset are applicable to general theming. We've _includesd three functions for getting values from the color maps:
+Bootstrap utilizes several Sass functions, but only a subset are applicable to general theming. We've includesd three functions for getting values from the color maps:
 
 {% highlight scss %}
 @function color($key: "blue") {
@@ -195,7 +195,7 @@ Additional functions could be added in the future or your own custom Sass to cre
 
 ### Color contrast
 
-One additional function we _includes in Bootstrap is the color contrast function, `color-yiq`. It utilizes the [YIQ color space](https://en.wikipedia.org/wiki/YIQ) to automatically return a light (`#fff`) or dark (`#111`) contrast color based on the specified base color. This function is especially useful for mixins or loops where you're generating multiple classes.
+One additional function we includes in Bootstrap is the color contrast function, `color-yiq`. It utilizes the [YIQ color space](https://en.wikipedia.org/wiki/YIQ) to automatically return a light (`#fff`) or dark (`#111`) contrast color based on the specified base color. This function is especially useful for mixins or loops where you're generating multiple classes.
 
 For example, to generate color swatches from our `$theme-colors` map:
 
@@ -249,7 +249,7 @@ Many of Bootstrap's various components and utilities are built through a series 
 
 ### All colors
 
-All colors available in Bootstrap 4, are available as Sass variables and a Sass map in `scss/_variables.scss` file. This will be expanded upon in subsequent minor releases to add additional shades, much like the [grayscale palette](#grays) we already _includes.
+All colors available in Bootstrap 4, are available as Sass variables and a Sass map in `scss/_variables.scss` file. This will be expanded upon in subsequent minor releases to add additional shades, much like the [grayscale palette](#grays) we already includes.
 
 <div class="row">
   {% for color in site.data.colors %}
@@ -276,7 +276,7 @@ Here's how you can use these in your Sass:
 {% capture callout %}
 In the future, we'll aim to provide Sass maps and variables for shades of each color as we've done with the grayscale colors below.
 {% endcapture %}
-{% _includes callout.html content=callout type="info" %}
+{% includes callout.html content=callout type="info" %}
 
 ### Theme colors
 
@@ -338,23 +338,23 @@ Here are two examples of how we loop over the `$theme-colors` map to generate mo
 // Generate alert modifier classes
 @each $color, $value in $theme-colors {
   .alert-#{$color} {
-    @_includes alert-variant(theme-color-level($color, -10), theme-color-level($color, -9), theme-color-level($color, 6));
+    @includes alert-variant(theme-color-level($color, -10), theme-color-level($color, -9), theme-color-level($color, 6));
   }
 }
 
 // Generate `.bg-*` color utilities
 @each $color, $value in $theme-colors {
-  @_includes bg-variant('.bg-#{$color}', $value);
+  @includes bg-variant('.bg-#{$color}', $value);
 }
 {% endhighlight %}
 
 ### Responsive
 
-These Sass loops aren't limited to color maps, either. You can also generate responsive variations of your components or utilities. Take for example our responsive text alignment utilities where we mix an `@each` loop for the `$grid-breakpoints` Sass map with a media query _includes.
+These Sass loops aren't limited to color maps, either. You can also generate responsive variations of your components or utilities. Take for example our responsive text alignment utilities where we mix an `@each` loop for the `$grid-breakpoints` Sass map with a media query includes.
 
 {% highlight scss %}
 @each $breakpoint in map-keys($grid-breakpoints) {
-  @_includes media-breakpoint-up($breakpoint) {
+  @includes media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     .text#{$infix}-left   { text-align: left !important; }
@@ -368,11 +368,11 @@ Should you need to modify your `$grid-breakpoints`, your changes will apply to a
 
 ## CSS variables
 
-Bootstrap 4 _includess around two dozen [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) in its compiled CSS. These provide easy access to commonly used values like our theme colors, breakpoints, and primary font stacks when working in your browser's Inspector, a code sandbox, or general prototyping.
+Bootstrap 4 includess around two dozen [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) in its compiled CSS. These provide easy access to commonly used values like our theme colors, breakpoints, and primary font stacks when working in your browser's Inspector, a code sandbox, or general prototyping.
 
 ### Available variables
 
-Here are the variables we _includes (note that the `:root` is required). They're located in our `_root.scss` file.
+Here are the variables we includes (note that the `:root` is required). They're located in our `_root.scss` file.
 
 {% highlight css %}
 :root {
@@ -422,7 +422,7 @@ a {
 
 ### Breakpoint variables
 
-While we originally _includesd breakpoints in our CSS variables (e.g., `--breakpoint-md`), **these are not supported in media queries**, but they can still be used _within_ rulesets in media queries. These breakpoint variables remain in the compiled CSS for backward compatibility given they can be utilized by JavaScript. [Learn more in the spec](https://www.w3.org/TR/css-variables-1/#using-variables).
+While we originally includesd breakpoints in our CSS variables (e.g., `--breakpoint-md`), **these are not supported in media queries**, but they can still be used _within_ rulesets in media queries. These breakpoint variables remain in the compiled CSS for backward compatibility given they can be utilized by JavaScript. [Learn more in the spec](https://www.w3.org/TR/css-variables-1/#using-variables).
 
 Here's an example of **what's not supported:**
 

@@ -5,7 +5,7 @@ description: Guidance and suggestions for using external icon libraries with Boo
 group: extend
 ---
 
-Bootstrap doesn't _includes an icon library by default, but we have a handful of recommendations for you to choose from. While most icon sets _includes multiple file formats, we prefer SVG implementations for their improved accessibility and vector support.
+Bootstrap doesn't includes an icon library by default, but we have a handful of recommendations for you to choose from. While most icon sets includes multiple file formats, we prefer SVG implementations for their improved accessibility and vector support.
 
 ## Preferred
 

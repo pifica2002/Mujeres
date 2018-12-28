@@ -1,7 +1,7 @@
 .pagination {
   display: flex;
-  @_includes list-unstyled();
-  @_includes border-radius();
+  @includes list-unstyled();
+  @includes border-radius();
 }
 
 .page-link {
@@ -38,12 +38,12 @@
   &:first-child {
     .page-link {
       margin-left: 0;
-      @_includes border-left-radius($border-radius);
+      @includes border-left-radius($border-radius);
     }
   }
   &:last-child {
     .page-link {
-      @_includes border-right-radius($border-radius);
+      @includes border-right-radius($border-radius);
     }
   }
 
@@ -70,9 +70,9 @@
 //
 
 .pagination-lg {
-  @_includes pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
+  @includes pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
 }
 
 .pagination-sm {
-  @_includes pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+  @includes pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
 }

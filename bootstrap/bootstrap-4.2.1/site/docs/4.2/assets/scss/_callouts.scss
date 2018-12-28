@@ -35,6 +35,6 @@
   h4 { color: $color; }
 }
 
-.bd-callout-info { @_includes bs-callout-variant($bd-info); }
-.bd-callout-warning { @_includes bs-callout-variant($bd-warning); }
-.bd-callout-danger { @_includes bs-callout-variant($bd-danger); }
+.bd-callout-info { @includes bs-callout-variant($bd-info); }
+.bd-callout-warning { @includes bs-callout-variant($bd-warning); }
+.bd-callout-danger { @includes bs-callout-variant($bd-danger); }

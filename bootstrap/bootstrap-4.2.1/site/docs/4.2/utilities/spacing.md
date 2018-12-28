@@ -1,18 +1,18 @@
 ---
 layout: docs
 title: Spacing
-description: Bootstrap _includess a wide range of shorthand responsive margin and padding utility classes to modify an element's appearance.
+description: Bootstrap includess a wide range of shorthand responsive margin and padding utility classes to modify an element's appearance.
 group: utilities
 toc: true
 ---
 
 ## How it works
 
-Assign responsive-friendly `margin` or `padding` values to an element or a subset of its sides with shorthand classes. _includess support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from `.25rem` to `3rem`.
+Assign responsive-friendly `margin` or `padding` values to an element or a subset of its sides with shorthand classes. includess support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from `.25rem` to `3rem`.
 
 ## Notation
 
-Spacing utilities that apply to all breakpoints, from `xs` to `xl`, have no breakpoint abbreviation in them. This is because those classes are applied from `min-width: 0` and up, and thus are not bound by a media query. The remaining breakpoints, however, do _includes a breakpoint abbreviation.
+Spacing utilities that apply to all breakpoints, from `xs` to `xl`, have no breakpoint abbreviation in them. This is because those classes are applied from `min-width: 0` and up, and thus are not bound by a media query. The remaining breakpoints, however, do includes a breakpoint abbreviation.
 
 The classes are named using the format `{property}{sides}-{size}` for `xs` and `{property}{sides}-{breakpoint}-{size}` for `sm`, `md`, `lg`, and `xl`.
 
@@ -68,7 +68,7 @@ Here are some representative examples of these classes:
 
 ### Horizontal centering
 
-Additionally, Bootstrap also _includess an `.mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal margins to `auto`.
+Additionally, Bootstrap also includess an `.mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal margins to `auto`.
 
 <div class="bd-example">
   <div class="mx-auto" style="width: 200px; background-color: rgba(86,61,124,.15);">
@@ -102,4 +102,4 @@ Here's an example of customizing the Bootstrap grid at the medium (`md`) breakpo
   <div class="col py-3 px-md-5 border bg-light">Custom column padding</div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}

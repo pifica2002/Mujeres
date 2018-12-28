@@ -21,7 +21,7 @@ Use border utilities to add or remove an element's borders. Choose from all bord
 <span class="border-bottom"></span>
 <span class="border-left"></span>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 </div>
 
 ### Subtractive
@@ -34,7 +34,7 @@ Use border utilities to add or remove an element's borders. Choose from all bord
 <span class="border-bottom-0"></span>
 <span class="border-left-0"></span>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 </div>
 
 ## Border color
@@ -47,7 +47,7 @@ Change the border color using utilities built on our theme colors.
 <span class="border border-{{ color.name }}"></span>{% endfor %}
 <span class="border border-white"></span>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 </div>
 
 ## Border-radius
@@ -55,14 +55,14 @@ Change the border color using utilities built on our theme colors.
 Add classes to an element to easily round its corners.
 
 <div class="bd-example bd-example-images">
-  {%- _includes icons/placeholder.svg width="75" height="75" class="rounded" title="Example rounded image" -%}
-  {%- _includes icons/placeholder.svg width="75" height="75" class="rounded-top" title="Example top rounded image" -%}
-  {%- _includes icons/placeholder.svg width="75" height="75" class="rounded-right" title="Example right rounded image" -%}
-  {%- _includes icons/placeholder.svg width="75" height="75" class="rounded-bottom" title="Example bottom rounded image" -%}
-  {%- _includes icons/placeholder.svg width="75" height="75" class="rounded-left" title="Example left rounded image" -%}
-  {%- _includes icons/placeholder.svg width="75" height="75" class="rounded-circle" title="Completely round image" -%}
-  {%- _includes icons/placeholder.svg width="150" height="75" class="rounded-pill" title="Rounded pill image" -%}
-  {%- _includes icons/placeholder.svg width="75" height="75" class="rounded-0" title="Example non-rounded image (overrides rounding applied elsewhere)" -%}
+  {%- includes icons/placeholder.svg width="75" height="75" class="rounded" title="Example rounded image" -%}
+  {%- includes icons/placeholder.svg width="75" height="75" class="rounded-top" title="Example top rounded image" -%}
+  {%- includes icons/placeholder.svg width="75" height="75" class="rounded-right" title="Example right rounded image" -%}
+  {%- includes icons/placeholder.svg width="75" height="75" class="rounded-bottom" title="Example bottom rounded image" -%}
+  {%- includes icons/placeholder.svg width="75" height="75" class="rounded-left" title="Example left rounded image" -%}
+  {%- includes icons/placeholder.svg width="75" height="75" class="rounded-circle" title="Completely round image" -%}
+  {%- includes icons/placeholder.svg width="150" height="75" class="rounded-pill" title="Rounded pill image" -%}
+  {%- includes icons/placeholder.svg width="75" height="75" class="rounded-0" title="Example non-rounded image (overrides rounding applied elsewhere)" -%}
 </div>
 
 {% highlight html %}

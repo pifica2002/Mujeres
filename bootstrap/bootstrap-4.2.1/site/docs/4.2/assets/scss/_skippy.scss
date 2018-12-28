@@ -6,7 +6,7 @@
   background-color: $bd-purple;
   outline: 0;
 
-  @_includes hover {
+  @includes hover {
     color: $white;
   }
 }

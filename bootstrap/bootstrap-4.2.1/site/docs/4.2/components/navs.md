@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Navs
-description: Documentation and examples for how to use Bootstrap's _includesd navigation components.
+description: Documentation and examples for how to use Bootstrap's includesd navigation components.
 group: components
 toc: true
 ---
@@ -10,12 +10,12 @@ toc: true
 
 Navigation available in Bootstrap share general markup and styles, from the base `.nav` class to the active and disabled states. Swap modifier classes to switch between each style.
 
-The base `.nav` component is built with flexbox and provide a strong foundation for building all types of navigation components. It _includess some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.
+The base `.nav` component is built with flexbox and provide a strong foundation for building all types of navigation components. It includess some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.
 
 {% capture callout %}
-The base `.nav` component does not _includes any `.active` state. The following examples _includes the class, mainly to demonstrate that this particular class does not trigger any special styling.
+The base `.nav` component does not includes any `.active` state. The following examples includes the class, mainly to demonstrate that this particular class does not trigger any special styling.
 {% endcapture %}
-{% _includes callout.html content=callout type="info" %}
+{% includes callout.html content=callout type="info" %}
 
 {% capture example %}
 <ul class="nav">
@@ -33,7 +33,7 @@ The base `.nav` component does not _includes any `.active` state. The following 
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 Classes are used throughout, so your markup can be super flexible. Use `<ul>`s like above, `<ol>` if the order of your items is important, or roll your own with a `<nav>` element. Because the `.nav` uses `display: flex`, the nav links behave the same as nav items would, but without the extra markup.
 
@@ -45,7 +45,7 @@ Classes are used throughout, so your markup can be super flexible. Use `<ul>`s l
   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 </nav>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Available styles
 
@@ -73,7 +73,7 @@ Centered with `.justify-content-center`:
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 Right-aligned with `.justify-content-end`:
 
@@ -93,7 +93,7 @@ Right-aligned with `.justify-content-end`:
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Vertical
 
@@ -115,7 +115,7 @@ Stack your navigation by changing the flex item direction with the `.flex-column
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 As always, vertical navigation is possible without `<ul>`s, too.
 
@@ -127,7 +127,7 @@ As always, vertical navigation is possible without `<ul>`s, too.
   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 </nav>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Tabs
 
@@ -149,7 +149,7 @@ Takes the basic nav from above and adds the `.nav-tabs` class to generate a tabb
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Pills
 
@@ -171,7 +171,7 @@ Take that same HTML, but use `.nav-pills` instead:
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Fill and justify
 
@@ -193,9 +193,9 @@ Force your `.nav`'s contents to extend the full available width one of two modif
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
-When using a `<nav>`-based navigation, be sure to _includes `.nav-item` on the anchors.
+When using a `<nav>`-based navigation, be sure to includes `.nav-item` on the anchors.
 
 {% capture example %}
 <nav class="nav nav-pills nav-fill">
@@ -205,7 +205,7 @@ When using a `<nav>`-based navigation, be sure to _includes `.nav-item` on the a
   <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 </nav>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 For equal-width elements, use `.nav-justified`. All horizontal space will be occupied by nav links, but unlike the `.nav-fill` above, every nav item will be the same width.
 
@@ -217,9 +217,9 @@ For equal-width elements, use `.nav-justified`. All horizontal space will be occ
   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 </nav>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
-Similar to the `.nav-fill` example using a `<nav>`-based navigation, be sure to _includes `.nav-item` on the anchors.
+Similar to the `.nav-fill` example using a `<nav>`-based navigation, be sure to includes `.nav-item` on the anchors.
 
 {% capture example %}
 <nav class="nav nav-pills nav-justified">
@@ -230,7 +230,7 @@ Similar to the `.nav-fill` example using a `<nav>`-based navigation, be sure to 
 </nav>
 
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 ## Working with flex utilities
 
 If you need responsive nav variations, consider using a series of [flexbox utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/flex/). While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.
@@ -243,7 +243,7 @@ If you need responsive nav variations, consider using a series of [flexbox utili
   <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 </nav>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Regarding accessibility
 
@@ -280,7 +280,7 @@ Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Pills with dropdowns
 
@@ -307,11 +307,11 @@ Add dropdown menus with a little extra HTML and the [dropdowns JavaScript plugin
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## JavaScript behavior
 
-Use the tab JavaScript plugin—_includes it individually or through the compiled `bootstrap.js` file—to extend our navigational tabs and pills to create tabbable panes of local content, even via dropdown menus.
+Use the tab JavaScript plugin—includes it individually or through the compiled `bootstrap.js` file—to extend our navigational tabs and pills to create tabbable panes of local content, even via dropdown menus.
 
 If you're building our JavaScript from source, it [requires `util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#util).
 
@@ -564,7 +564,7 @@ To make tabs fade in, add `.fade` to each `.tab-pane`. The first tab pane must a
 
 ### Methods
 
-{% _includes callout-danger-async-methods.md %}
+{% includes callout-danger-async-methods.md %}
 
 #### $().tab
 

@@ -13,10 +13,10 @@
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
-  @_includes button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
-  @_includes transition($btn-transition);
+  @includes button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  @includes transition($btn-transition);
 
-  @_includes hover {
+  @includes hover {
     color: $body-color;
     text-decoration: none;
   }
@@ -31,7 +31,7 @@
   &.disabled,
   &:disabled {
     opacity: $btn-disabled-opacity;
-    @_includes box-shadow(none);
+    @includes box-shadow(none);
   }
 
   // Opinionated: add "hand" cursor to non-disabled .btn elements
@@ -41,10 +41,10 @@
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active {
-    @_includes box-shadow($btn-active-box-shadow);
+    @includes box-shadow($btn-active-box-shadow);
 
     &:focus {
-      @_includes box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      @includes box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
     }
   }
 }
@@ -62,13 +62,13 @@ fieldset:disabled a.btn {
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    @_includes button-variant($value, $value);
+    @includes button-variant($value, $value);
   }
 }
 
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
-    @_includes button-outline-variant($value);
+    @includes button-outline-variant($value);
   }
 }
 
@@ -82,7 +82,7 @@ fieldset:disabled a.btn {
   font-weight: $font-weight-normal;
   color: $link-color;
 
-  @_includes hover {
+  @includes hover {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
   }
@@ -108,11 +108,11 @@ fieldset:disabled a.btn {
 //
 
 .btn-lg {
-  @_includes button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  @includes button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
 }
 
 .btn-sm {
-  @_includes button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  @includes button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
 
 

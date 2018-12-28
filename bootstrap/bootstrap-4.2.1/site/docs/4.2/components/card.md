@@ -8,7 +8,7 @@ toc: true
 
 ## About
 
-A **card** is a flexible and extensible content container. It _includess options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you're familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
+A **card** is a flexible and extensible content container. It includess options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you're familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
 
 ## Example
 
@@ -18,7 +18,7 @@ Below is an example of a basic card with mixed content and a fixed width. Cards 
 
 {% capture example %}
 <div class="card" style="width: 18rem;">
-  {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+  {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -26,7 +26,7 @@ Below is an example of a basic card with mixed content and a fixed width. Cards 
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Content types
 
@@ -43,7 +43,7 @@ The building block of a card is the `.card-body`. Use it whenever you need a pad
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Titles, text, and links
 
@@ -62,7 +62,7 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Images
 
@@ -70,13 +70,13 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
 
 {% capture example %}
 <div class="card" style="width: 18rem;">
-  {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+  {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
   <div class="card-body">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### List groups
 
@@ -91,7 +91,7 @@ Create lists of content in a card with a flush list group.
   </ul>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture example %}
 <div class="card" style="width: 18rem;">
@@ -105,7 +105,7 @@ Create lists of content in a card with a flush list group.
   </ul>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Kitchen sink
 
@@ -113,7 +113,7 @@ Mix and match multiple content types to create the card you need, or throw every
 
 {% capture example %}
 <div class="card" style="width: 18rem;">
-  {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+  {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -129,7 +129,7 @@ Mix and match multiple content types to create the card you need, or throw every
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Header and footer
 
@@ -147,7 +147,7 @@ Add an optional header and/or footer within a card.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 Card headers can be styled by adding `.card-header` to `<h*>` elements.
 
@@ -161,7 +161,7 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture example %}
 <div class="card">
@@ -176,7 +176,7 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture example %}
 <div class="card text-center">
@@ -193,7 +193,7 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Sizing
 
@@ -225,7 +225,7 @@ Using the grid, wrap cards in columns and rows as needed.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Using utilities
 
@@ -248,7 +248,7 @@ Use our handful of [available sizing utilities]({{ site.baseurl }}/docs/{{ site.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Using custom CSS
 
@@ -263,7 +263,7 @@ Use custom CSS in your stylesheets or as inline styles to set a width.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Text alignment
 
@@ -294,7 +294,7 @@ You can quickly change the text alignment of any card—in its entirety or speci
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Navigation
 
@@ -322,7 +322,7 @@ Add some navigation to a card's header (or block) with Bootstrap's [nav componen
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture example %}
 <div class="card text-center">
@@ -346,19 +346,19 @@ Add some navigation to a card's header (or block) with Bootstrap's [nav componen
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Images
 
-Cards _includes a few options for working with images. Choose from appending "image caps" at either end of a card, overlaying images with card content, or simply embedding the image in a card.
+Cards includes a few options for working with images. Choose from appending "image caps" at either end of a card, overlaying images with card content, or simply embedding the image in a card.
 
 ### Image caps
 
-Similar to headers and footers, cards can _includes top and bottom "image caps"—images at the top or bottom of a card.
+Similar to headers and footers, cards can includes top and bottom "image caps"—images at the top or bottom of a card.
 
 {% capture example %}
 <div class="card mb-3">
-  {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+  {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -371,10 +371,10 @@ Similar to headers and footers, cards can _includes top and bottom "image caps"�
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
-  {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-bottom" text="Image cap" %}
+  {% includes icons/placeholder.svg width="100%" height="180" class="card-img-bottom" text="Image cap" %}
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Image overlays
 
@@ -382,7 +382,7 @@ Turn an image into a card background and overlay your card's text. Depending on 
 
 {% capture example %}
 <div class="card bg-dark text-white">
-  {% _includes icons/placeholder.svg width="100%" height="270" class="bd-placeholder-img-lg card-img" text="Card image" %}
+  {% includes icons/placeholder.svg width="100%" height="270" class="bd-placeholder-img-lg card-img" text="Card image" %}
   <div class="card-img-overlay">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -390,16 +390,16 @@ Turn an image into a card background and overlay your card's text. Depending on 
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture callout %}
 Note that content should not be larger than the height of the image. If content is larger than the image the content will be displayed outside the image.
 {% endcapture %}
-{% _includes callout.html content=callout type="info" %}
+{% includes callout.html content=callout type="info" %}
 
 ## Card styles
 
-Cards _includes various options for customizing their backgrounds, borders, and color.
+Cards includes various options for customizing their backgrounds, borders, and color.
 
 ### Background and color
 
@@ -415,9 +415,9 @@ Use [text and background utilities]({{ site.baseurl }}/docs/{{ site.docs_version
   </div>
 </div>{% endfor %}
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
-{% _includes callout-warning-color-assistive-technologies.md %}
+{% includes callout-warning-color-assistive-technologies.md %}
 
 ### Border
 
@@ -433,7 +433,7 @@ Use [border utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities
   </div>
 </div>{% endfor %}
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Mixins utilities
 
@@ -449,11 +449,11 @@ You can also change the borders on the card header and footer as needed, and eve
   <div class="card-footer bg-transparent border-success">Footer</div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Card layout
 
-In addition to styling the content within cards, Bootstrap _includess a few options for laying out series of cards. For the time being, **these layout options are not yet responsive**.
+In addition to styling the content within cards, Bootstrap includess a few options for laying out series of cards. For the time being, **these layout options are not yet responsive**.
 
 ### Card groups
 
@@ -462,7 +462,7 @@ Use card groups to render cards as a single, attached element with equal width a
 {% capture example %}
 <div class="card-group">
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -470,7 +470,7 @@ Use card groups to render cards as a single, attached element with equal width a
     </div>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -478,7 +478,7 @@ Use card groups to render cards as a single, attached element with equal width a
     </div>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -487,14 +487,14 @@ Use card groups to render cards as a single, attached element with equal width a
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 When using card groups with footers, their content will automatically line up.
 
 {% capture example %}
 <div class="card-group">
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -504,7 +504,7 @@ When using card groups with footers, their content will automatically line up.
     </div>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -514,7 +514,7 @@ When using card groups with footers, their content will automatically line up.
     </div>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -525,7 +525,7 @@ When using card groups with footers, their content will automatically line up.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Card decks
 
@@ -534,7 +534,7 @@ Need a set of equal width and height cards that aren't attached to one another? 
 {% capture example %}
 <div class="card-deck">
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="200" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="200" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -542,7 +542,7 @@ Need a set of equal width and height cards that aren't attached to one another? 
     </div>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="200" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="200" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -550,7 +550,7 @@ Need a set of equal width and height cards that aren't attached to one another? 
     </div>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="200" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="200" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -559,14 +559,14 @@ Need a set of equal width and height cards that aren't attached to one another? 
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 Just like with card groups, card footers in decks will automatically line up.
 
 {% capture example %}
 <div class="card-deck">
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -576,7 +576,7 @@ Just like with card groups, card footers in decks will automatically line up.
     </div>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -586,7 +586,7 @@ Just like with card groups, card footers in decks will automatically line up.
     </div>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="180" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -597,7 +597,7 @@ Just like with card groups, card footers in decks will automatically line up.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ### Card columns
 
@@ -608,7 +608,7 @@ Cards can be organized into [Masonry](https://masonry.desandro.com/)-like column
 {% capture example %}
 <div class="card-columns">
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="160" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="160" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title that wraps to a new line</h5>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -625,7 +625,7 @@ Cards can be organized into [Masonry](https://masonry.desandro.com/)-like column
     </blockquote>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="160" class="card-img-top" text="Image cap" %}
+    {% includes icons/placeholder.svg width="100%" height="160" class="card-img-top" text="Image cap" %}
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -650,7 +650,7 @@ Cards can be organized into [Masonry](https://masonry.desandro.com/)-like column
     </div>
   </div>
   <div class="card">
-    {% _includes icons/placeholder.svg width="100%" height="260" class="card-img" text="Card image" %}
+    {% includes icons/placeholder.svg width="100%" height="260" class="card-img" text="Card image" %}
   </div>
   <div class="card p-3 text-right">
     <blockquote class="blockquote mb-0">
@@ -671,16 +671,16 @@ Cards can be organized into [Masonry](https://masonry.desandro.com/)-like column
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 Card columns can also be extended and customized with some additional code. Shown below is an extension of the `.card-columns` class using the same CSS we use—CSS columns— to generate a set of responsive tiers for changing the number of columns.
 
 {% highlight scss %}
 .card-columns {
-  @_includes media-breakpoint-only(lg) {
+  @includes media-breakpoint-only(lg) {
     column-count: 4;
   }
-  @_includes media-breakpoint-only(xl) {
+  @includes media-breakpoint-only(xl) {
     column-count: 5;
   }
 }

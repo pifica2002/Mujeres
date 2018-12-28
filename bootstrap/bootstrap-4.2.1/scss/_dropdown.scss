@@ -8,7 +8,7 @@
 
 .dropdown-toggle {
   // Generate the caret automatically
-  @_includes caret;
+  @includes caret;
 }
 
 // The dropdown menu
@@ -29,12 +29,12 @@
   background-color: $dropdown-bg;
   background-clip: padding-box;
   border: $dropdown-border-width solid $dropdown-border-color;
-  @_includes border-radius($dropdown-border-radius);
-  @_includes box-shadow($dropdown-box-shadow);
+  @includes border-radius($dropdown-border-radius);
+  @includes box-shadow($dropdown-box-shadow);
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-  @_includes media-breakpoint-up($breakpoint) {
+  @includes media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     .dropdown-menu#{$infix}-right {
@@ -45,7 +45,7 @@
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-  @_includes media-breakpoint-up($breakpoint) {
+  @includes media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     .dropdown-menu#{$infix}-left {
@@ -66,7 +66,7 @@
   }
 
   .dropdown-toggle {
-    @_includes caret(up);
+    @includes caret(up);
   }
 }
 
@@ -80,7 +80,7 @@
   }
 
   .dropdown-toggle {
-    @_includes caret(right);
+    @includes caret(right);
     &::after {
       vertical-align: 0;
     }
@@ -97,7 +97,7 @@
   }
 
   .dropdown-toggle {
-    @_includes caret(left);
+    @includes caret(left);
     &::before {
       vertical-align: 0;
     }
@@ -118,7 +118,7 @@
 
 // Dividers (basically an `<hr>`) within the dropdown
 .dropdown-divider {
-  @_includes nav-divider($dropdown-divider-bg);
+  @includes nav-divider($dropdown-divider-bg);
 }
 
 // Links, buttons, and more within the dropdown menu
@@ -137,24 +137,24 @@
   border: 0; // For `<button>`s
 
   &:first-child {
-    @_includes border-top-radius($dropdown-inner-border-radius);
+    @includes border-top-radius($dropdown-inner-border-radius);
   }
 
   &:last-child {
-    @_includes border-bottom-radius($dropdown-inner-border-radius);
+    @includes border-bottom-radius($dropdown-inner-border-radius);
   }
 
-  @_includes hover-focus {
+  @includes hover-focus {
     color: $dropdown-link-hover-color;
     text-decoration: none;
-    @_includes gradient-bg($dropdown-link-hover-bg);
+    @includes gradient-bg($dropdown-link-hover-bg);
   }
 
   &.active,
   &:active {
     color: $dropdown-link-active-color;
     text-decoration: none;
-    @_includes gradient-bg($dropdown-link-active-bg);
+    @includes gradient-bg($dropdown-link-active-bg);
   }
 
   &.disabled,

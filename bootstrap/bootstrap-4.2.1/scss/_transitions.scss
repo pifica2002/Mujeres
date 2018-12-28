@@ -1,7 +1,7 @@
 // stylelint-disable selector-no-qualifying-type
 
 .fade {
-  @_includes transition($transition-fade);
+  @includes transition($transition-fade);
 
   &:not(.show) {
     opacity: 0;
@@ -18,5 +18,5 @@
   position: relative;
   height: 0;
   overflow: hidden;
-  @_includes transition($transition-collapse);
+  @includes transition($transition-collapse);
 }

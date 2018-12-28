@@ -1,10 +1,10 @@
 {%- comment -%}
-  Usage: _includes bugify.html content=text,
+  Usage: includes bugify.html content=text,
   where content is a string that contains a bug reference name and id.
   e.g. Bootstrap#19984
 {%- endcomment -%}
 
-{%- assign words = _includes.content | split: " " -%}
+{%- assign words = includes.content | split: " " -%}
 
 {%- for word in words -%}
   {% if word contains "#" %}

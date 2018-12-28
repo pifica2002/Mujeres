@@ -11,7 +11,7 @@ toc: true
 
 The `text-hide()` class and mixin has been deprecated as of v4.1. It will be removed entirely in v5.
 {% endcapture %}
-{% _includes callout.html content=callout type="warning" %}
+{% includes callout.html content=callout type="warning" %}
 
 Utilize the `.text-hide` class or mixin to help replace an element's text content with a background image.
 
@@ -22,7 +22,7 @@ Utilize the `.text-hide` class or mixin to help replace an element's text conten
 {% highlight scss %}
 // Usage as a mixin
 .heading {
-  @_includes text-hide;
+  @includes text-hide;
 }
 {% endhighlight %}
 

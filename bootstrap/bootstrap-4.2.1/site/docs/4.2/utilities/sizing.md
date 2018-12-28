@@ -8,7 +8,7 @@ toc: true
 
 ## Relative to the parent
 
-Width and height utilities are generated from the `$sizes` Sass map in `_variables.scss`. _includess support for `25%`, `50%`, `75%`, `100%`, and `auto` by default. Modify those values as you need to generate different utilities here.
+Width and height utilities are generated from the `$sizes` Sass map in `_variables.scss`. includess support for `25%`, `50%`, `75%`, `100%`, and `auto` by default. Modify those values as you need to generate different utilities here.
 
 {% capture example %}
 <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
@@ -17,7 +17,7 @@ Width and height utilities are generated from the `$sizes` Sass map in `_variabl
 <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
 <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture example %}
 <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
@@ -28,21 +28,21 @@ Width and height utilities are generated from the `$sizes` Sass map in `_variabl
   <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 You can also use `max-width: 100%;` and `max-height: 100%;` utilities as needed.
 
 {% capture example %}
-{% _includes icons/placeholder.svg width="100%" height="100" class="mw-100" text="Max-width 100%" %}
+{% includes icons/placeholder.svg width="100%" height="100" class="mw-100" text="Max-width 100%" %}
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture example %}
 <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
   <div class="mh-100" style="width: 100px; height: 200px; background-color: rgba(0,0,255,0.1);">Max-height 100%</div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Relative to the viewport
 

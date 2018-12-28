@@ -1,9 +1,9 @@
 {%- comment -%}
-  Usage: _includes callout.html content=callout type="type",
+  Usage: includes callout.html content=callout type="type",
   where content is a capture with the content
   and type is one of: info (default), danger, warning
 {%- endcomment -%}
-{%- assign css_class = _includes.type | default: "info" -%}
+{%- assign css_class = includes.type | default: "info" -%}
 <div class="bd-callout bd-callout-{{ css_class }}">
-  {{- _includes.content | markdownify -}}
+  {{- includes.content | markdownify -}}
 </div>

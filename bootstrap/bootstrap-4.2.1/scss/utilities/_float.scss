@@ -1,9 +1,9 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
-  @_includes media-breakpoint-up($breakpoint) {
+  @includes media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .float#{$infix}-left  { @_includes float-left; }
-    .float#{$infix}-right { @_includes float-right; }
-    .float#{$infix}-none  { @_includes float-none; }
+    .float#{$infix}-left  { @includes float-left; }
+    .float#{$infix}-right { @includes float-right; }
+    .float#{$infix}-none  { @includes float-none; }
   }
 }

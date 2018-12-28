@@ -10,7 +10,7 @@ toc: true
 
 Rules are directly applied to `<iframe>`, `<embed>`, `<video>`, and `<object>` elements; optionally use an explicit descendant class `.embed-responsive-item` when you want to match the styling for other attributes.
 
-**Pro-Tip!** You don't need to _includes `frameborder="0"` in your `<iframe>`s as we override that for you.
+**Pro-Tip!** You don't need to includes `frameborder="0"` in your `<iframe>`s as we override that for you.
 
 ## Example
 
@@ -21,7 +21,7 @@ Wrap any embed like an `<iframe>` in a parent element with `.embed-responsive` a
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Aspect ratios
 

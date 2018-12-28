@@ -8,7 +8,7 @@
   }
   a#{$parent},
   button#{$parent} {
-    @_includes hover-focus {
+    @includes hover-focus {
       background-color: darken($color, 10%) !important;
     }
   }

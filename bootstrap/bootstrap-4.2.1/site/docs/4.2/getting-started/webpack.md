@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Webpack
-description: Learn how to _includes Bootstrap in your project using Webpack.
+description: Learn how to includes Bootstrap in your project using Webpack.
 group: getting-started
 toc: true
 ---
@@ -43,7 +43,7 @@ First, create your own `_custom.scss` and use it to override the [built-in custo
 @import "~bootstrap/scss/bootstrap";
 {% endhighlight %}
 
-For Bootstrap to compile, make sure you install and use the required loaders: [sass-loader](https://github.com/webpack-contrib/sass-loader), [postcss-loader](https://github.com/postcss/postcss-loader) with [Autoprefixer](https://github.com/postcss/autoprefixer#webpack). With minimal setup, your webpack config should _includes this rule or similar:
+For Bootstrap to compile, make sure you install and use the required loaders: [sass-loader](https://github.com/webpack-contrib/sass-loader), [postcss-loader](https://github.com/postcss/postcss-loader) with [Autoprefixer](https://github.com/postcss/autoprefixer#webpack). With minimal setup, your webpack config should includes this rule or similar:
 
 {% highlight js %}
 ...

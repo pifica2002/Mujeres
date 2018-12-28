@@ -25,9 +25,9 @@ Apply `.visible` or `.invisible` as needed.
 
 // Usage as a mixin
 .element {
-  @_includes invisible(visible);
+  @includes invisible(visible);
 }
 .element {
-  @_includes invisible(hidden);
+  @includes invisible(hidden);
 }
 {% endhighlight %}

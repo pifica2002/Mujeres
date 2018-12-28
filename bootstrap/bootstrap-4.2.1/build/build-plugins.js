@@ -16,7 +16,7 @@ const TEST    = process.env.NODE_ENV === 'test'
 const plugins = [
   babel({
     exclude: 'node_modules/**', // Only transpile our source code
-    externalHelpersWhitelist: [ // _includes only required helpers
+    externalHelpersWhitelist: [ // includes only required helpers
       'defineProperties',
       'createClass',
       'inheritsLoose',

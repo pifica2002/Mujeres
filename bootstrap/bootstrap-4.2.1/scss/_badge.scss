@@ -12,10 +12,10 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  @_includes border-radius($badge-border-radius);
+  @includes border-radius($badge-border-radius);
 
   @at-root a#{&} {
-    @_includes hover-focus {
+    @includes hover-focus {
       text-decoration: none;
     }
   }
@@ -39,7 +39,7 @@
 .badge-pill {
   padding-right: $badge-pill-padding-x;
   padding-left: $badge-pill-padding-x;
-  @_includes border-radius($badge-pill-border-radius);
+  @includes border-radius($badge-pill-border-radius);
 }
 
 // Colors
@@ -48,6 +48,6 @@
 
 @each $color, $value in $theme-colors {
   .badge-#{$color} {
-    @_includes badge-variant($value);
+    @includes badge-variant($value);
   }
 }

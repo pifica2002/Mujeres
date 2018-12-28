@@ -14,14 +14,14 @@ Below is an example of a single media object. Only two classes are required—th
 
 {% capture example %}
 <div class="media">
-  {% _includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
+  {% includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
   <div class="media-body">
     <h5 class="mt-0">Media heading</h5>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture callout %}
 ##### Flexbug #12: Inline elements aren't treated as flex items
@@ -30,7 +30,7 @@ Internet Explorer 10-11 do not render inline elements like links or images (or `
 
 **Source:** [Flexbugs on GitHub](https://github.com/philipwalton/flexbugs#flexbug-12)
 {% endcapture %}
-{% _includes callout.html content=callout type="warning" %}
+{% includes callout.html content=callout type="warning" %}
 
 ## Nesting
 
@@ -38,14 +38,14 @@ Media objects can be infinitely nested, though we suggest you stop at some point
 
 {% capture example %}
 <div class="media">
-  {% _includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
+  {% includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
   <div class="media-body">
     <h5 class="mt-0">Media heading</h5>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
     <div class="media mt-3">
       <a class="mr-3" href="#">
-        {% _includes icons/placeholder.svg width="64" height="64" %}
+        {% includes icons/placeholder.svg width="64" height="64" %}
       </a>
       <div class="media-body">
         <h5 class="mt-0">Media heading</h5>
@@ -55,7 +55,7 @@ Media objects can be infinitely nested, though we suggest you stop at some point
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Alignment
 
@@ -63,7 +63,7 @@ Media in a media object can be aligned with flexbox utilities to the top (defaul
 
 {% capture example %}
 <div class="media">
-  {% _includes icons/placeholder.svg width="64" height="64" class="align-self-start mr-3" %}
+  {% includes icons/placeholder.svg width="64" height="64" class="align-self-start mr-3" %}
   <div class="media-body">
     <h5 class="mt-0">Top-aligned media</h5>
     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -71,11 +71,11 @@ Media in a media object can be aligned with flexbox utilities to the top (defaul
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture example %}
 <div class="media">
-  {% _includes icons/placeholder.svg width="64" height="64" class="align-self-center mr-3" %}
+  {% includes icons/placeholder.svg width="64" height="64" class="align-self-center mr-3" %}
   <div class="media-body">
     <h5 class="mt-0">Center-aligned media</h5>
     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -83,11 +83,11 @@ Media in a media object can be aligned with flexbox utilities to the top (defaul
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% capture example %}
 <div class="media">
-  {% _includes icons/placeholder.svg width="64" height="64" class="align-self-end mr-3" %}
+  {% includes icons/placeholder.svg width="64" height="64" class="align-self-end mr-3" %}
   <div class="media-body">
     <h5 class="mt-0">Bottom-aligned media</h5>
     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -95,7 +95,7 @@ Media in a media object can be aligned with flexbox utilities to the top (defaul
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Order
 
@@ -107,10 +107,10 @@ Change the order of content in media objects by modifying the HTML itself, or by
     <h5 class="mt-0 mb-1">Media object</h5>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
   </div>
-  {% _includes icons/placeholder.svg width="64" height="64" class="ml-3" %}
+  {% includes icons/placeholder.svg width="64" height="64" class="ml-3" %}
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Media list
 
@@ -119,21 +119,21 @@ Because the media object has so few structural requirements, you can also use th
 {% capture example %}
 <ul class="list-unstyled">
   <li class="media">
-    {% _includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
+    {% includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
     <div class="media-body">
       <h5 class="mt-0 mb-1">List-based media object</h5>
       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
     </div>
   </li>
   <li class="media my-4">
-    {% _includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
+    {% includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
     <div class="media-body">
       <h5 class="mt-0 mb-1">List-based media object</h5>
       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
     </div>
   </li>
   <li class="media">
-    {% _includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
+    {% includes icons/placeholder.svg width="64" height="64" class="mr-3" %}
     <div class="media-body">
       <h5 class="mt-0 mb-1">List-based media object</h5>
       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -141,4 +141,4 @@ Because the media object has so few structural requirements, you can also use th
   </li>
 </ul>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}

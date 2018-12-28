@@ -40,34 +40,34 @@
 // Grid mixins
 .example-container {
   width: 800px;
-  @_includes make-container();
+  @includes make-container();
 }
 
 .example-row {
-  @_includes make-row();
+  @includes make-row();
 }
 
 .example-content-main {
-  @_includes make-col-ready();
+  @includes make-col-ready();
 
-  @_includes media-breakpoint-up(sm) {
-    @_includes make-col(6);
+  @includes media-breakpoint-up(sm) {
+    @includes make-col(6);
   }
 
-  @_includes media-breakpoint-up(lg) {
-    @_includes make-col(8);
+  @includes media-breakpoint-up(lg) {
+    @includes make-col(8);
   }
 }
 
 .example-content-secondary {
-  @_includes make-col-ready();
+  @includes make-col-ready();
 
-  @_includes media-breakpoint-up(sm) {
-    @_includes make-col(6);
+  @includes media-breakpoint-up(sm) {
+    @includes make-col(6);
   }
 
-  @_includes media-breakpoint-up(lg) {
-    @_includes make-col(4);
+  @includes media-breakpoint-up(lg) {
+    @includes make-col(4);
   }
 }
 
@@ -120,9 +120,9 @@
   margin: 1rem (-$grid-gutter-width / 2) 0;
   border: solid $gray-100;
   border-width: .2rem 0 0;
-  @_includes clearfix();
+  @includes clearfix();
 
-  @_includes media-breakpoint-up(sm) {
+  @includes media-breakpoint-up(sm) {
     padding: 1.5rem;
     margin-right: 0;
     margin-left: 0;
@@ -142,7 +142,7 @@
     position: relative;
     margin: -1rem;
 
-    @_includes media-breakpoint-up(sm) {
+    @includes media-breakpoint-up(sm) {
       margin: -1.5rem;
     }
   }
@@ -259,7 +259,7 @@
     margin: 1rem -1rem -1rem;
   }
 
-  @_includes media-breakpoint-up(sm) {
+  @includes media-breakpoint-up(sm) {
     .fixed-top,
     .sticky-top {
       margin: -1.5rem -1.5rem 1rem;
@@ -382,7 +382,7 @@
   background-color: $gray-100;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 
-  @_includes media-breakpoint-up(sm) {
+  @includes media-breakpoint-up(sm) {
     padding: 1.5rem;
   }
 }
@@ -391,7 +391,7 @@
   margin-right: (-$grid-gutter-width / 2);
   margin-left: (-$grid-gutter-width / 2);
 
-  @_includes media-breakpoint-up(sm) {
+  @includes media-breakpoint-up(sm) {
     margin-right: 0;
     margin-left: 0;
   }

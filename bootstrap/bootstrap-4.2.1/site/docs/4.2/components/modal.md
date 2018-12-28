@@ -23,7 +23,7 @@ $('#myModal').on('shown.bs.modal', function () {
 })
 {% endhighlight %}
 
-{% _includes callout-info-prefersreducedmotion.md %}
+{% includes callout-info-prefersreducedmotion.md %}
 
 Keep reading for demos and usage guidelines.
 
@@ -31,7 +31,7 @@ Keep reading for demos and usage guidelines.
 
 ### Modal components
 
-Below is a _static_ modal example (meaning its `position` and `display` have been overridden). _includesd are the modal header, modal body (required for `padding`), and modal footer (optional). We ask that you _includes modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
+Below is a _static_ modal example (meaning its `position` and `display` have been overridden). includesd are the modal header, modal body (required for `padding`), and modal footer (optional). We ask that you includes modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
 
 <div class="bd-example bd-example-modal">
   <div class="modal" tabindex="-1" role="dialog">
@@ -436,7 +436,7 @@ Below is a live demo followed by example HTML and JavaScript. For more informati
   </div>
 </div>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 {% highlight js %}
 $('#exampleModal').on('show.bs.modal', function (event) {
@@ -643,7 +643,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>backdrop</td>
       <td>boolean or the string <code>'static'</code></td>
       <td>true</td>
-      <td>_includess a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
+      <td>includess a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
     </tr>
     <tr>
       <td>keyboard</td>
@@ -668,7 +668,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 ### Methods
 
-{% _includes callout-danger-async-methods.md %}
+{% includes callout-danger-async-methods.md %}
 
 #### `.modal(options)`
 

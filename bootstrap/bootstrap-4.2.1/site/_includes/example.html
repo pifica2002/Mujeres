@@ -1,5 +1,5 @@
 {%- comment -%}
-  Usage: _includes example.html content=markup [args],
+  Usage: includes example.html content=markup [args],
   where content is a capture with the HTML content
 
   args can be one of the following:
@@ -9,25 +9,25 @@
     optional: hide_markup - disabled (default)
 {%- endcomment -%}
 
-{%- assign id = _includes.id -%}
-{%- assign class = _includes.class -%}
+{%- assign id = includes.id -%}
+{%- assign class = includes.class -%}
 
-{%- if _includes.hide_preview == null -%}
+{%- if includes.hide_preview == null -%}
 <div{% if id %} id="{{ id }}"{% endif %} class="bd-example{% if class %} {{ class }}{% endif %}">
-  {{- _includes.content -}}
+  {{- includes.content -}}
 </div>
 {%- endif -%}
 
-{%- if _includes.hide_markup == null -%}
+{%- if includes.hide_markup == null -%}
   {%- highlight html -%}
-    {%- if _includes.content contains '<svg class="bd-placeholder-img' -%}
-      {%- assign modified_content = _includes.content
+    {%- if includes.content contains '<svg class="bd-placeholder-img' -%}
+      {%- assign modified_content = includes.content
         | replace: '<svg class="bd-placeholder-img', '✂️<svg class="bd-placeholder-img'
         | replace: '</svg>', '</svg>✂️'
         | split: '✂️' -%}
 
-      {%- if _includes.content contains 'bd-placeholder-img ' -%}
-        {%- assign image_class = _includes.content
+      {%- if includes.content contains 'bd-placeholder-img ' -%}
+        {%- assign image_class = includes.content
           | replace_first: 'bd-placeholder-img', 'bd-placeholder-img ✂️'
           | replace: '" width="', '✂️" width="'
           | split: '✂️' -%}
@@ -45,7 +45,7 @@
         {%- endif -%}
       {%- endfor -%}
     {%- else -%}
-      {{- _includes.content -}}
+      {{- includes.content -}}
     {%- endif -%}
   {%- endhighlight -%}
 {%- endif -%}

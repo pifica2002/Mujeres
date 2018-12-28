@@ -82,12 +82,12 @@ mark,
 //
 
 .list-unstyled {
-  @_includes list-unstyled;
+  @includes list-unstyled;
 }
 
 // Inline turns list items into inline-block
 .list-inline {
-  @_includes list-unstyled;
+  @includes list-unstyled;
 }
 .list-inline-item {
   display: inline-block;

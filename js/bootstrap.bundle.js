@@ -1508,7 +1508,7 @@
    * copies of the Software, and to permit persons to whom the Software is
    * furnished to do so, subject to the following conditions:
    *
-   * The above copyright notice and this permission notice shall be _includesd in all
+   * The above copyright notice and this permission notice shall be includesd in all
    * copies or substantial portions of the Software.
    *
    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -1804,7 +1804,7 @@
    * @param {Boolean} subtract - set to true if you want to subtract the scroll values
    * @return {Object} rect - The modifier rect object
    */
-  function _includesScroll(rect, element) {
+  function includesScroll(rect, element) {
     var subtract = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
     var scrollTop = getScroll(element, 'top');
@@ -2005,7 +2005,7 @@
 
     // Subtract margins of documentElement in case it's being used as parent
     // we do this only on HTML because it's the only element that behaves
-    // differently when margins are applied to it. The margins are _includesd in
+    // differently when margins are applied to it. The margins are includesd in
     // the box of the documentElement, in the other cases not.
     if (!isIE10 && isHTML) {
       var marginTop = parseFloat(styles.marginTop, 10);
@@ -2022,7 +2022,7 @@
     }
 
     if (isIE10 && !fixedPosition ? parent.contains(scrollParent) : parent === scrollParent && scrollParent.nodeName !== 'BODY') {
-      offsets = _includesScroll(offsets, parent);
+      offsets = includesScroll(offsets, parent);
     }
 
     return offsets;
@@ -2865,7 +2865,7 @@
     if (!isRequired) {
       var _requesting = '`' + requestingName + '`';
       var requested = '`' + requestedName + '`';
-      console.warn(requested + ' modifier is required by ' + _requesting + ' modifier in order to work, be sure to _includes it before ' + _requesting + '!');
+      console.warn(requested + ' modifier is required by ' + _requesting + ' modifier in order to work, be sure to includes it before ' + _requesting + '!');
     }
     return isRequired;
   }
@@ -4022,7 +4022,7 @@
       /**
        * Collection of utilities useful when writing custom modifiers.
        * Starting from version 1.7, this method is available only if you
-       * _includes `popper-utils.js` before `popper.js`.
+       * includes `popper-utils.js` before `popper.js`.
        *
        * **DEPRECATION**: This way to access PopperUtils is deprecated
        * and will be removed in v2! Use the PopperUtils module directly instead.
@@ -6784,7 +6784,7 @@
 
   (function () {
     if (typeof $ === 'undefined') {
-      throw new TypeError('Bootstrap\'s JavaScript requires jQuery. jQuery must be _includesd before Bootstrap\'s JavaScript.');
+      throw new TypeError('Bootstrap\'s JavaScript requires jQuery. jQuery must be includesd before Bootstrap\'s JavaScript.');
     }
 
     var version = $.fn.jquery.split(' ')[0].split('.');

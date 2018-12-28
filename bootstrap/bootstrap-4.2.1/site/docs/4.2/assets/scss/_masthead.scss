@@ -19,7 +19,7 @@
     margin-bottom: -3rem !important;
   }
 
-  @_includes media-breakpoint-up(sm) {
+  @includes media-breakpoint-up(sm) {
     padding-top: 5rem;
     padding-bottom: 5rem;
 
@@ -28,7 +28,7 @@
     }
   }
 
-  @_includes media-breakpoint-up(md) {
+  @includes media-breakpoint-up(md) {
     h1 {
       font-size: 4rem;
     }

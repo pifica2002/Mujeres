@@ -42,7 +42,7 @@
 
   // When fading in the modal, animate it to slide down
   .modal.fade & {
-    @_includes transition($modal-transition);
+    @includes transition($modal-transition);
     transform: $modal-fade-transform;
   }
   .modal.show & {
@@ -74,8 +74,8 @@
   background-color: $modal-content-bg;
   background-clip: padding-box;
   border: $modal-content-border-width solid $modal-content-border-color;
-  @_includes border-radius($modal-content-border-radius);
-  @_includes box-shadow($modal-content-box-shadow-xs);
+  @includes border-radius($modal-content-border-radius);
+  @includes box-shadow($modal-content-box-shadow-xs);
   // Remove focus outline from opened modal
   outline: 0;
 }
@@ -103,7 +103,7 @@
   justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
   padding: $modal-header-padding;
   border-bottom: $modal-header-border-width solid $modal-header-border-color;
-  @_includes border-top-radius($modal-content-border-radius);
+  @includes border-top-radius($modal-content-border-radius);
 
   .close {
     padding: $modal-header-padding;
@@ -135,7 +135,7 @@
   justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
   padding: $modal-inner-padding;
   border-top: $modal-footer-border-width solid $modal-footer-border-color;
-  @_includes border-bottom-radius($modal-content-border-radius);
+  @includes border-bottom-radius($modal-content-border-radius);
 
   // Easily place margin between footer elements
   > :not(:first-child) { margin-left: .25rem; }
@@ -152,7 +152,7 @@
 }
 
 // Scale up the modal
-@_includes media-breakpoint-up(sm) {
+@includes media-breakpoint-up(sm) {
   // Automatically set modal's width for larger viewports
   .modal-dialog {
     max-width: $modal-md;
@@ -168,19 +168,19 @@
   }
 
   .modal-content {
-    @_includes box-shadow($modal-content-box-shadow-sm-up);
+    @includes box-shadow($modal-content-box-shadow-sm-up);
   }
 
   .modal-sm { max-width: $modal-sm; }
 }
 
-@_includes media-breakpoint-up(lg) {
+@includes media-breakpoint-up(lg) {
   .modal-lg,
   .modal-xl {
     max-width: $modal-lg;
   }
 }
 
-@_includes media-breakpoint-up(xl) {
+@includes media-breakpoint-up(xl) {
   .modal-xl { max-width: $modal-xl; }
 }

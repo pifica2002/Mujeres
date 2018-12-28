@@ -10,7 +10,7 @@ Before opening:
 - [Validate](https://html5.validator.nu/) and [lint](https://github.com/twbs/bootlint#in-the-browser) any HTML to avoid common problems
 - Read the [contributing guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md)
 
-Bug reports must _includes:
+Bug reports must includes:
 
 - Operating system and version (Windows, macOS, Android, iOS, Win10 Mobile)
 - Browser and version (Chrome, Firefox, Safari, IE, MS Edge, Opera 15+, Android Browser)

@@ -9,14 +9,14 @@ Bootstrap is released under the MIT license and is copyright {{ site.time | date
 
 #### It requires you to:
 
-* Keep the license and copyright notice _includesd in Bootstrap's CSS and JavaScript files when you use them in your works
+* Keep the license and copyright notice includesd in Bootstrap's CSS and JavaScript files when you use them in your works
 
 #### It permits you to:
 
 - Freely download and use Bootstrap, in whole or in part, for personal, private, company internal, or commercial purposes
 - Use Bootstrap in packages or distributions that you create
 - Modify the source code
-- Grant a sublicense to modify and distribute Bootstrap to third parties not _includesd in the license
+- Grant a sublicense to modify and distribute Bootstrap to third parties not includesd in the license
 
 #### It forbids you to:
 
@@ -28,7 +28,7 @@ Bootstrap is released under the MIT license and is copyright {{ site.time | date
 
 #### It does not require you to:
 
-- _includes the source of Bootstrap itself, or of any modifications you may have made to it, in any redistribution you may assemble that _includess it
+- includes the source of Bootstrap itself, or of any modifications you may have made to it, in any redistribution you may assemble that includess it
 - Submit changes that you make to Bootstrap back to the Bootstrap project (though such feedback is encouraged)
 
 The full Bootstrap license is located [in the project repository]({{ site.repo }}/blob/v{{ site.current_version }}/LICENSE) for more information.

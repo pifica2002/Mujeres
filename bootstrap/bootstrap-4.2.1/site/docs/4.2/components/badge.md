@@ -18,7 +18,7 @@ Badges scale to match the size of the immediate parent element by using relative
 <h5>Example heading <span class="badge badge-secondary">New</span></h5>
 <h6>Example heading <span class="badge badge-secondary">New</span></h6>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 Badges can be used as part of links or buttons to provide a counter.
 
@@ -27,7 +27,7 @@ Badges can be used as part of links or buttons to provide a counter.
   Notifications <span class="badge badge-light">4</span>
 </button>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button.
 
@@ -39,7 +39,7 @@ Unless the context is clear (as with the "Notifications" example, where it is un
   <span class="sr-only">unread messages</span>
 </button>
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Contextual variations
 
@@ -49,9 +49,9 @@ Add any of the below mentioned modifier classes to change the appearance of a ba
 {% for color in site.data.theme-colors %}
 <span class="badge badge-{{ color.name }}">{{ color.name | capitalize }}</span>{% endfor %}
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
-{% _includes callout-warning-color-assistive-technologies.md %}
+{% includes callout-warning-color-assistive-technologies.md %}
 
 ## Pill badges
 
@@ -61,7 +61,7 @@ Use the `.badge-pill` modifier class to make badges more rounded (with a larger 
 {% for color in site.data.theme-colors %}
 <span class="badge badge-pill badge-{{ color.name }}">{{ color.name | capitalize }}</span>{% endfor %}
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}
 
 ## Links
 
@@ -71,4 +71,4 @@ Using the contextual `.badge-*` classes on an `<a>` element quickly provide _act
 {% for color in site.data.theme-colors %}
 <a href="#" class="badge badge-{{ color.name }}">{{ color.name | capitalize }}</a>{% endfor %}
 {% endcapture %}
-{% _includes example.html content=example %}
+{% includes example.html content=example %}

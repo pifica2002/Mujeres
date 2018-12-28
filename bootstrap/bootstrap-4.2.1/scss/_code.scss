@@ -16,14 +16,14 @@ kbd {
   font-size: $kbd-font-size;
   color: $kbd-color;
   background-color: $kbd-bg;
-  @_includes border-radius($border-radius-sm);
-  @_includes box-shadow($kbd-box-shadow);
+  @includes border-radius($border-radius-sm);
+  @includes box-shadow($kbd-box-shadow);
 
   kbd {
     padding: 0;
     font-size: 100%;
     font-weight: $nested-kbd-font-weight;
-    @_includes box-shadow(none);
+    @includes box-shadow(none);
   }
 }
 

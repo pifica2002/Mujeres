@@ -10,7 +10,7 @@ We've designed and developed Bootstrap to work in a number of environments. Here
 {% capture callout %}
 **Heads up!** This copy is a work in progress.
 {% endcapture %}
-{% _includes callout.html content=callout type="info" %}
+{% includes callout.html content=callout type="info" %}
 
 ### General outline
 
