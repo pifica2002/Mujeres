@@ -12,7 +12,7 @@ const external = ['jquery', 'popper.js']
 const plugins = [
   babel({
     exclude: 'node_modules/**', // Only transpile our source code
-    externalHelpersWhitelist: [ // Include only required helpers
+    externalHelpersWhitelist: [ // _includes only required helpers
       'defineProperties',
       'createClass',
       'inheritsLoose',

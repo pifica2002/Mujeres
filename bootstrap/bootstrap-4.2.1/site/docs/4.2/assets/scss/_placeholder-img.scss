@@ -10,7 +10,7 @@
 }
 
 .bd-placeholder-img-lg {
-  @include media-breakpoint-up(md) {
+  @_includes media-breakpoint-up(md) {
     font-size: 3.5rem;
   }
 }

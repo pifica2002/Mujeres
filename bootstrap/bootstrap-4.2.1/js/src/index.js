@@ -21,7 +21,7 @@ import Util from './util'
 
 (() => {
   if (typeof $ === 'undefined') {
-    throw new TypeError('Bootstrap\'s JavaScript requires jQuery. jQuery must be included before Bootstrap\'s JavaScript.')
+    throw new TypeError('Bootstrap\'s JavaScript requires jQuery. jQuery must be _includesd before Bootstrap\'s JavaScript.')
   }
 
   const version = $.fn.jquery.split(' ')[0].split('.')

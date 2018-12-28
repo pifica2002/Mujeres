@@ -29,11 +29,11 @@ const reporters = ['dots']
 const detectBrowsers = {
   usePhantomJS: false,
   postDetection(availableBrowser) {
-    if (typeof process.env.TRAVIS_JOB_ID !== 'undefined' || availableBrowser.includes('Chrome')) {
+    if (typeof process.env.TRAVIS_JOB_ID !== 'undefined' || availableBrowser._includess('Chrome')) {
       return ['ChromeHeadless']
     }
 
-    if (availableBrowser.includes('Firefox')) {
+    if (availableBrowser._includess('Firefox')) {
       return ['FirefoxHeadless']
     }
 
@@ -97,7 +97,7 @@ if (bundle) {
     `site/docs/${pkg.version_short}/assets/js/vendor/jquery-slim.min.js`,
     'js/dist/util.js',
     'js/dist/tooltip.js',
-    'js/dist/!(util|index|tooltip).js' // include all of our js/dist files except util.js, index.js and tooltip.js
+    'js/dist/!(util|index|tooltip).js' // _includes all of our js/dist files except util.js, index.js and tooltip.js
   ])
 } else {
   frameworks.push('detectBrowsers')
@@ -111,7 +111,7 @@ if (bundle) {
     jqueryFile,
     'js/coverage/dist/util.js',
     'js/coverage/dist/tooltip.js',
-    'js/coverage/dist/!(util|index|tooltip).js' // include all of our js/dist files except util.js, index.js and tooltip.js
+    'js/coverage/dist/!(util|index|tooltip).js' // _includes all of our js/dist files except util.js, index.js and tooltip.js
   ])
   reporters.push('coverage-istanbul')
   conf.customLaunchers = customLaunchers

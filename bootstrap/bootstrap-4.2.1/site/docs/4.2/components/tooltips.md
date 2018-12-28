@@ -10,7 +10,7 @@ toc: true
 
 Things to know when using the tooltip plugin:
 
-- Tooltips rely on the 3rd party library [Popper.js](https://popper.js.org/) for positioning. You must include [popper.min.js]({{ site.cdn.popper }}) before bootstrap.js or use `bootstrap.bundle.min.js` / `bootstrap.bundle.js` which contains Popper.js in order for tooltips to work!
+- Tooltips rely on the 3rd party library [Popper.js](https://popper.js.org/) for positioning. You must _includes [popper.min.js]({{ site.cdn.popper }}) before bootstrap.js or use `bootstrap.bundle.min.js` / `bootstrap.bundle.js` which contains Popper.js in order for tooltips to work!
 - If you're building our JavaScript from source, it [requires `util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#util).
 - Tooltips are opt-in for performance reasons, so **you must initialize them yourself**.
 - Tooltips with zero-length titles are never displayed.
@@ -21,7 +21,7 @@ Things to know when using the tooltip plugin:
 - Tooltips must be hidden before their corresponding elements have been removed from the DOM.
 - Tooltips can be triggered thanks to an element inside a shadow DOM.
 
-{% include callout-info-prefersreducedmotion.md %}
+{% _includes callout-info-prefersreducedmotion.md %}
 
 Got all that? Great, let's see how they work with some examples.
 
@@ -98,7 +98,7 @@ Tooltip position attempts to automatically change when a parent container has `o
 $('#example').tooltip({ boundary: 'window' })
 {% endhighlight %}
 {% endcapture %}
-{% include callout.html content=callout type="warning" %}
+{% _includes callout.html content=callout type="warning" %}
 
 ### Markup
 
@@ -111,7 +111,7 @@ You should only add tooltips to HTML elements that are traditionally keyboard-fo
 
 Additionally, do not rely solely on `hover` as the trigger for your tooltip, as this will make your tooltips impossible to trigger for keyboard users.
 {% endcapture %}
-{% include callout.html content=callout type="warning" %}
+{% _includes callout.html content=callout type="warning" %}
 
 {% highlight html %}
 <!-- HTML to write -->
@@ -136,7 +136,7 @@ Elements with the `disabled` attribute aren't interactive, meaning users cannot 
   <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
 </span>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Options
@@ -259,11 +259,11 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.
 {% endcapture %}
-{% include callout.html content=callout type="info" %}
+{% _includes callout.html content=callout type="info" %}
 
 ### Methods
 
-{% include callout-danger-async-methods.md %}
+{% _includes callout-danger-async-methods.md %}
 
 #### `$().tooltip(options)`
 

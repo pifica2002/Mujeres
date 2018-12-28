@@ -11,7 +11,7 @@
     margin-top: 0;
   }
 
-  @include media-breakpoint-up(md) {
+  @_includes media-breakpoint-up(md) {
     display: block;
   }
 }

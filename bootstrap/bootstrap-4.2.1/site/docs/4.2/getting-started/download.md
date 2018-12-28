@@ -1,19 +1,19 @@
 ---
 layout: docs
 title: Download
-description: Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.
+description: Download Bootstrap to get the compiled CSS and JavaScript, source code, or _includes it with your favorite package managers like npm, RubyGems, and more.
 group: getting-started
 toc: true
 ---
 
 ## Compiled CSS and JS
 
-Download ready-to-use compiled code for **Bootstrap v{{ site.current_version}}** to easily drop into your project, which includes:
+Download ready-to-use compiled code for **Bootstrap v{{ site.current_version}}** to easily drop into your project, which _includess:
 
 - Compiled and minified CSS bundles (see [CSS files comparison]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/contents/#css-files))
 - Compiled and minified JavaScript plugins
 
-This doesn't include documentation, source files, or any optional JavaScript dependencies (jQuery and Popper.js).
+This doesn't _includes documentation, source files, or any optional JavaScript dependencies (jQuery and Popper.js).
 
 <a href="{{ site.download.dist }}" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download Bootstrap');">Download</a>
 
@@ -24,7 +24,7 @@ Compile Bootstrap with your own asset pipeline by downloading our source Sass, J
 - Sass compiler (Libsass or Ruby Sass is supported) for compiling your CSS.
 - [Autoprefixer](https://github.com/postcss/autoprefixer) for CSS vendor prefixing
 
-Should you require [build tools]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/build-tools/#tooling-setup), they are included for developing Bootstrap and its docs, but they're likely unsuitable for your own purposes.
+Should you require [build tools]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/build-tools/#tooling-setup), they are _includesd for developing Bootstrap and its docs, but they're likely unsuitable for your own purposes.
 
 <a href="{{ site.download.source }}" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download source');">Download source</a>
 
@@ -37,7 +37,7 @@ Skip the download with [BootstrapCDN](https://www.bootstrapcdn.com/) to deliver 
 <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
 {% endhighlight %}
 
-If you're using our compiled JavaScript, don't forget to include CDN versions of jQuery and Popper.js before it.
+If you're using our compiled JavaScript, don't forget to _includes CDN versions of jQuery and Popper.js before it.
 
 {% highlight html %}
 <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>

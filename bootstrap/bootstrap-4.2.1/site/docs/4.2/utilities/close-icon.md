@@ -6,11 +6,11 @@ group: utilities
 toc: true
 ---
 
-**Be sure to include text for screen readers**, as we've done with `aria-label`.
+**Be sure to _includes text for screen readers**, as we've done with `aria-label`.
 
 {% capture example %}
 <button type="button" class="close" aria-label="Close">
   <span aria-hidden="true">&times;</span>
 </button>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}

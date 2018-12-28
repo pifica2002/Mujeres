@@ -86,7 +86,7 @@ function main(args) {
     'node_modules',
     'vendor'
   ])
-  const INCLUDED_EXTENSIONS = new Set([
+  const _includesD_EXTENSIONS = new Set([
     // This extension whitelist is how we avoid modifying binary files
     '',
     '.css',
@@ -98,7 +98,7 @@ function main(args) {
     '.txt',
     '.yml'
   ])
-  replaceRecursively('.', EXCLUDED_DIRS, INCLUDED_EXTENSIONS, oldVersion, newVersion)
+  replaceRecursively('.', EXCLUDED_DIRS, _includesD_EXTENSIONS, oldVersion, newVersion)
 }
 
 main(process.argv.slice(2))

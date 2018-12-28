@@ -40,7 +40,7 @@ Our bug tracker utilizes several labels to help organize and identify issues. He
 - `confirmed` - Issues that have been confirmed with a reduced test case and identify a bug in Bootstrap.
 - `css` - Issues stemming from our compiled CSS or source Sass files.
 - `docs` - Issues for improving or updating our documentation.
-- `examples` - Issues involving the example templates included in our docs.
+- `examples` - Issues involving the example templates _includesd in our docs.
 - `feature` - Issues asking for a new feature to be added, or an existing one to be extended or modified. New features require a minor version bump (e.g., `v3.0.0` to `v3.1.0`).
 - `build` - Issues with our build system, which is used to run all our tests, concatenate and compile source files, and more.
 - `help wanted` - Issues we need or would love help from the community to resolve.
@@ -84,7 +84,7 @@ Example:
 > Short and descriptive example bug report title
 >
 > A summary of the issue and the browser/OS environment in which it occurs. If
-> suitable, include the steps required to reproduce the bug.
+> suitable, _includes the steps required to reproduce the bug.
 >
 > 1. This is the first step
 > 2. This is the second step
@@ -93,7 +93,7 @@ Example:
 > `<url>` - a link to the reduced test case
 >
 > Any other information you want to share that is relevant to the issue being
-> reported. This might include the lines of code that you have identified as
+> reported. This might _includes the lines of code that you have identified as
 > causing the bug, and potential solutions (and your opinions on their
 > merits).
 
@@ -149,7 +149,7 @@ documentation source files in
 documentation source files and is managed separately by the Bootstrap Core Team.
 
 Adhering to the following process is the best way to get your work
-included in the project:
+_includesd in the project:
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your fork,
    and configure the remotes:
@@ -200,9 +200,9 @@ included in the project:
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owners to
 license your work under the terms of the [MIT License](LICENSE) (if it
-includes code changes) and under the terms of the
+_includess code changes) and under the terms of the
 [Creative Commons Attribution 3.0 Unported License](docs/LICENSE)
-(if it includes documentation changes).
+(if it _includess documentation changes).
 
 
 ## Code guidelines

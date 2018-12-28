@@ -1,3 +1,3 @@
 .clearfix {
-  @include clearfix();
+  @_includes clearfix();
 }

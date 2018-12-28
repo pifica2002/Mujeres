@@ -87,7 +87,7 @@
 
 .table-hover {
   tbody tr {
-    @include hover {
+    @_includes hover {
       background-color: $table-hover-bg;
     }
   }
@@ -100,10 +100,10 @@
 // inheritance to nested tables.
 
 @each $color, $value in $theme-colors {
-  @include table-row-variant($color, theme-color-level($color, $table-bg-level), theme-color-level($color, $table-border-level));
+  @_includes table-row-variant($color, theme-color-level($color, $table-bg-level), theme-color-level($color, $table-border-level));
 }
 
-@include table-row-variant(active, $table-active-bg);
+@_includes table-row-variant(active, $table-active-bg);
 
 
 // Dark styles
@@ -151,7 +151,7 @@
 
   &.table-hover {
     tbody tr {
-      @include hover {
+      @_includes hover {
         background-color: $table-dark-hover-bg;
       }
     }
@@ -170,7 +170,7 @@
     $infix: breakpoint-infix($next, $grid-breakpoints);
 
     &#{$infix} {
-      @include media-breakpoint-down($breakpoint) {
+      @_includes media-breakpoint-down($breakpoint) {
         display: block;
         width: 100%;
         overflow-x: auto;

@@ -16,9 +16,9 @@ Alerts are available for any length of text, as well as an optional dismiss butt
   A simple {{ color.name }} alert—check it out!
 </div>{% endfor %}
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
-{% include callout-warning-color-assistive-technologies.md %}
+{% _includes callout-warning-color-assistive-technologies.md %}
 
 ### Link color
 
@@ -30,7 +30,7 @@ Use the `.alert-link` utility class to quickly provide matching colored links wi
   A simple {{ color.name }} alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
 </div>{% endfor %}
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ### Additional content
 
@@ -44,7 +44,7 @@ Alerts can also contain additional HTML elements like headings, paragraphs and d
   <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 
 ### Dismissing
@@ -52,7 +52,7 @@ Alerts can also contain additional HTML elements like headings, paragraphs and d
 Using the alert JavaScript plugin, it's possible to dismiss any alert inline. Here's how:
 
 - Be sure you've loaded the alert plugin, or the compiled Bootstrap JavaScript.
-- If you're building our JavaScript from source, it [requires `util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#util). The compiled version includes this.
+- If you're building our JavaScript from source, it [requires `util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#util). The compiled version _includess this.
 - Add a dismiss button and the `.alert-dismissible` class, which adds extra padding to the right of the alert and positions the `.close` button.
 - On the dismiss button, add the `data-dismiss="alert"` attribute, which triggers the JavaScript functionality. Be sure to use the `<button>` element with it for proper behavior across all devices.
 - To animate alerts when dismissing them, be sure to add the `.fade` and `.show` classes.
@@ -67,7 +67,7 @@ You can see this in action with a live demo:
   </button>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## JavaScript behavior
 

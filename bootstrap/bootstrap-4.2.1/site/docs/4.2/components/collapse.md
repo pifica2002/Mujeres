@@ -10,7 +10,7 @@ toc: true
 
 The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the `height` from its current value to `0`. Given how CSS handles animations, you cannot use `padding` on a `.collapse` element. Instead, use the class as an independent wrapping element.
 
-{% include callout-info-prefersreducedmotion.md %}
+{% _includes callout-info-prefersreducedmotion.md %}
 
 ## Example
 
@@ -37,7 +37,7 @@ You can use a link with the `href` attribute, or a button with the `data-target`
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Multiple targets
 
@@ -67,7 +67,7 @@ Multiple `<button>` or `<a>` can show and hide an element if they each reference
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Accordion example
 
@@ -120,7 +120,7 @@ Using the [card]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/card
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Accessibility
 
@@ -128,7 +128,7 @@ Be sure to add `aria-expanded` to the control element. This attribute explicitly
 
 If your control element is targeting a single collapsible element – i.e. the `data-target` attribute is pointing to an `id` selector – you should add the `aria-controls` attribute to the control element, containing the `id` of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.
 
-Note that Bootstrap's current implementation does not cover the various keyboard interactions described in the [WAI-ARIA Authoring Practices 1.1 accordion pattern](https://www.w3.org/TR/wai-aria-practices-1.1/#accordion) - you will need to include these yourself with custom JavaScript.
+Note that Bootstrap's current implementation does not cover the various keyboard interactions described in the [WAI-ARIA Authoring Practices 1.1 accordion pattern](https://www.w3.org/TR/wai-aria-practices-1.1/#accordion) - you will need to _includes these yourself with custom JavaScript.
 
 ## Usage
 
@@ -185,7 +185,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 ### Methods
 
-{% include callout-danger-async-methods.md %}
+{% _includes callout-danger-async-methods.md %}
 
 #### `.collapse(options)`
 

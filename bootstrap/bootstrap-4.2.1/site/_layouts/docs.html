@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% include header.html %}
+    {% _includes header.html %}
   </head>
   <body>
-    {% include skippy.html %}
+    {% _includes skippy.html %}
 
-    {% include docs-navbar.html %}
+    {% _includes docs-navbar.html %}
 
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-          {% include docs-sidebar.html %}
+          {% _includes docs-sidebar.html %}
         </div>
 
         {% if page.toc %}
@@ -23,12 +23,12 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">{{ page.title | smartify }}</h1>
           <p class="bd-lead">{{ page.description | smartify }}</p>
-          {% include ads.html %}
+          {% _includes ads.html %}
           {{ content }}
         </main>
       </div>
     </div>
 
-    {% include scripts.html %}
+    {% _includes scripts.html %}
   </body>
 </html>

@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% include header.html %}
+    {% _includes header.html %}
   </head>
   <body>
-    {% include skippy.html %}
+    {% _includes skippy.html %}
 
-    {% include docs-navbar.html %}
+    {% _includes docs-navbar.html %}
 
     {% if page.layout == "simple" %}
       {{ content }}
@@ -16,7 +16,7 @@
       </main>
     {% endif %}
 
-    {% include footer.html %}
-    {% include scripts.html %}
+    {% _includes footer.html %}
+    {% _includes scripts.html %}
   </body>
 </html>

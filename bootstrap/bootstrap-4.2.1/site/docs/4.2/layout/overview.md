@@ -71,16 +71,16 @@ Since we write our source CSS in Sass, all our media queries are available via S
 
 {% highlight scss %}
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-@include media-breakpoint-up(sm) { ... }
-@include media-breakpoint-up(md) { ... }
-@include media-breakpoint-up(lg) { ... }
-@include media-breakpoint-up(xl) { ... }
+@_includes media-breakpoint-up(sm) { ... }
+@_includes media-breakpoint-up(md) { ... }
+@_includes media-breakpoint-up(lg) { ... }
+@_includes media-breakpoint-up(xl) { ... }
 
 // Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
 .custom-class {
   display: none;
 }
-@include media-breakpoint-up(sm) {
+@_includes media-breakpoint-up(sm) {
   .custom-class {
     display: block;
   }
@@ -106,19 +106,19 @@ We occasionally use media queries that go in the other direction (the given scre
 // No media query since the extra-large breakpoint has no upper bound on its width
 {% endhighlight %}
 
-{% include callout-info-mediaqueries-breakpoints.md %}
+{% _includes callout-info-mediaqueries-breakpoints.md %}
 
 Once again, these media queries are also available via Sass mixins:
 
 {% highlight scss %}
-@include media-breakpoint-down(xs) { ... }
-@include media-breakpoint-down(sm) { ... }
-@include media-breakpoint-down(md) { ... }
-@include media-breakpoint-down(lg) { ... }
+@_includes media-breakpoint-down(xs) { ... }
+@_includes media-breakpoint-down(sm) { ... }
+@_includes media-breakpoint-down(md) { ... }
+@_includes media-breakpoint-down(lg) { ... }
 // No media query necessary for xl breakpoint as it has no upper bound on its width
 
 // Example: Style from medium breakpoint and down
-@include media-breakpoint-down(md) {
+@_includes media-breakpoint-down(md) {
   .custom-class {
     display: block;
   }
@@ -147,11 +147,11 @@ There are also media queries and mixins for targeting a single segment of screen
 These media queries are also available via Sass mixins:
 
 {% highlight scss %}
-@include media-breakpoint-only(xs) { ... }
-@include media-breakpoint-only(sm) { ... }
-@include media-breakpoint-only(md) { ... }
-@include media-breakpoint-only(lg) { ... }
-@include media-breakpoint-only(xl) { ... }
+@_includes media-breakpoint-only(xs) { ... }
+@_includes media-breakpoint-only(sm) { ... }
+@_includes media-breakpoint-only(md) { ... }
+@_includes media-breakpoint-only(lg) { ... }
+@_includes media-breakpoint-only(xl) { ... }
 {% endhighlight %}
 
 Similarly, media queries may span multiple breakpoint widths:
@@ -165,7 +165,7 @@ Similarly, media queries may span multiple breakpoint widths:
 The Sass mixin for targeting the same screen size range would be:
 
 {% highlight scss %}
-@include media-breakpoint-between(md, xl) { ... }
+@_includes media-breakpoint-between(md, xl) { ... }
 {% endhighlight %}
 
 ## Z-index

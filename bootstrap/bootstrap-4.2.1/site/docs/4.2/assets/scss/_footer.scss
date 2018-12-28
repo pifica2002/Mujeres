@@ -21,7 +21,7 @@
     margin-bottom: 0;
   }
 
-  @include media-breakpoint-up(sm) {
+  @_includes media-breakpoint-up(sm) {
     text-align: left;
   }
 }

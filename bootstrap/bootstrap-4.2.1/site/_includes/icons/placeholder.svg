@@ -1,5 +1,5 @@
 {%- comment -%}
-  Usage: include icons/placeholder.svg args
+  Usage: _includes icons/placeholder.svg args
 
   args can be one of the following:
     title: Used in the SVG `title` tag
@@ -11,15 +11,15 @@
     height: default: 180px
 {%- endcomment -%}
 
-{%- assign title = include.title | default: 'Placeholder' -%}
-{%- assign class = include.class | default: '' -%}
-{%- assign color = include.color | default: site.data.grays[2].hex -%}
-{%- assign background = include.background | default: site.data.grays[5].hex -%}
-{%- assign width = include.width | default: '100%' -%}
-{%- assign height = include.height | default: '180' -%}
+{%- assign title = _includes.title | default: 'Placeholder' -%}
+{%- assign class = _includes.class | default: '' -%}
+{%- assign color = _includes.color | default: site.data.grays[2].hex -%}
+{%- assign background = _includes.background | default: site.data.grays[5].hex -%}
+{%- assign width = _includes.width | default: '100%' -%}
+{%- assign height = _includes.height | default: '180' -%}
 
-{%- if include.text -%}
-  {%- assign text = include.text -%}
+{%- if _includes.text -%}
+  {%- assign text = _includes.text -%}
 {%- else -%}
   {%- assign text = width | append: 'x' | append: height -%}
 {%- endif -%}

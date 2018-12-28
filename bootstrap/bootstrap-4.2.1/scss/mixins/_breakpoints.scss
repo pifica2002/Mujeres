@@ -90,11 +90,11 @@
       @content;
     }
   } @else if $max == null {
-    @include media-breakpoint-up($lower, $breakpoints) {
+    @_includes media-breakpoint-up($lower, $breakpoints) {
       @content;
     }
   } @else if $min == null {
-    @include media-breakpoint-down($upper, $breakpoints) {
+    @_includes media-breakpoint-down($upper, $breakpoints) {
       @content;
     }
   }
@@ -112,11 +112,11 @@
       @content;
     }
   } @else if $max == null {
-    @include media-breakpoint-up($name, $breakpoints) {
+    @_includes media-breakpoint-up($name, $breakpoints) {
       @content;
     }
   } @else if $min == null {
-    @include media-breakpoint-down($name, $breakpoints) {
+    @_includes media-breakpoint-down($name, $breakpoints) {
       @content;
     }
   }

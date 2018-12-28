@@ -5,4 +5,4 @@ All API methods are **asynchronous** and start a **transition**. They return to 
 
 [See our JavaScript documentation for more information]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/).
 {% endcapture %}
-{% include callout.html content=callout type="danger" %}
+{% _includes callout.html content=callout type="danger" %}

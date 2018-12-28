@@ -23,7 +23,7 @@ In addition, as pages likely have more than one such navigation section, it's ad
   </ul>
 </nav>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Working with icons
 
@@ -48,7 +48,7 @@ Looking to use an icon or symbol in place of text for some pagination links? Be 
   </ul>
 </nav>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Disabled and active states
 
@@ -73,7 +73,7 @@ While the `.disabled` class uses `pointer-events: none` to _try_ to disable the 
   </ul>
 </nav>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 You can optionally swap out active or disabled anchors for `<span>`, or omit the anchor in the case of the prev/next arrows, to remove click functionality and prevent keyboard focus while retaining intended styles.
 
@@ -97,7 +97,7 @@ You can optionally swap out active or disabled anchors for `<span>`, or omit the
   </ul>
 </nav>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Sizing
 
@@ -117,7 +117,7 @@ Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for
   </ul>
 </nav>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 {% capture example %}
 <nav aria-label="...">
@@ -133,7 +133,7 @@ Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for
   </ul>
 </nav>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Alignment
 
@@ -154,7 +154,7 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
   </ul>
 </nav>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 {% capture example %}
 <nav aria-label="Page navigation example">
@@ -171,4 +171,4 @@ Change the alignment of pagination components with [flexbox utilities]({{ site.b
   </ul>
 </nav>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}

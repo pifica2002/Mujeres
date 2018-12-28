@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Display property
-description: Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.
+description: Quickly and responsively toggle the display value of components and more with our display utilities. _includess support for some of the more common values, as well as some extras for controlling display when printing.
 group: utilities
 toc: true
 ---
@@ -12,7 +12,7 @@ Change the value of the [`display` property](https://developer.mozilla.org/en-US
 
 ## Notation
 
-Display utility classes that apply to all [breakpoints]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/#responsive-breakpoints), from `xs` to `xl`, have no breakpoint abbreviation in them. This is because those classes are applied from `min-width: 0;` and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
+Display utility classes that apply to all [breakpoints]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/#responsive-breakpoints), from `xs` to `xl`, have no breakpoint abbreviation in them. This is because those classes are applied from `min-width: 0;` and up, and thus are not bound by a media query. The remaining breakpoints, however, do _includes a breakpoint abbreviation.
 
 As such, the classes are named using the format:
 
@@ -39,13 +39,13 @@ The media queries effect screen widths with the given breakpoint *or larger*. Fo
 <div class="d-inline p-2 bg-primary text-white">d-inline</div>
 <div class="d-inline p-2 bg-dark text-white">d-inline</div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 {% capture example %}
 <span class="d-block p-2 bg-primary text-white">d-block</span>
 <span class="d-block p-2 bg-dark text-white">d-block</span>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Hiding elements
 
@@ -74,11 +74,11 @@ To show an element only on a given interval of screen sizes you can combine one 
 <div class="d-lg-none">hide on screens wider than lg</div>
 <div class="d-none d-lg-block">hide on screens smaller than lg</div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Display in print
 
-Change the `display` value of elements when printing with our print display utility classes. Includes support for the same `display` values as our responsive `.d-*` utilities.
+Change the `display` value of elements when printing with our print display utility classes. _includess support for the same `display` values as our responsive `.d-*` utilities.
 
 - `.d-print-none`
 - `.d-print-inline`
@@ -97,4 +97,4 @@ The print and display classes can be combined.
 <div class="d-none d-print-block">Print Only (Hide on screen only)</div>
 <div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print</div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}

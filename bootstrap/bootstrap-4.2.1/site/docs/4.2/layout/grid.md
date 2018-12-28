@@ -28,7 +28,7 @@ Bootstrap's grid system uses a series of containers, rows, and columns to layout
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent `.container`.
@@ -148,7 +148,7 @@ For example, here are two grid layouts that apply to every device and viewport, 
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 Equal-width columns can be broken into multiple lines, but there was a [Safari flexbox bug](https://github.com/philipwalton/flexbugs#flexbug-11) that prevented this from working without an explicit `flex-basis` or `border`. There are workarounds for older browser versions, but they shouldn't be necessary if you're up-to-date.
@@ -165,7 +165,7 @@ Equal-width columns can be broken into multiple lines, but there was a [Safari f
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Setting one column width
@@ -199,7 +199,7 @@ Auto-layout for flexbox grid columns also means you can set the width of one col
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Variable width content
@@ -233,7 +233,7 @@ Use `col-{breakpoint}-auto` classes to size columns based on the natural width o
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Equal-width multi-row
@@ -252,12 +252,12 @@ Create equal-width columns that span multiple rows by inserting a `.w-100` where
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ## Responsive classes
 
-Bootstrap's grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.
+Bootstrap's grid _includess five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.
 
 ### All breakpoints
 
@@ -278,7 +278,7 @@ For grids that are the same from the smallest of devices to the largest, use the
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Stacked to horizontal
@@ -299,7 +299,7 @@ Using a single set of `.col-sm-*` classes, you can create a basic grid system th
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Mix and match
@@ -329,7 +329,7 @@ Don't want your columns to simply stack in some grid tiers? Use a combination of
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Gutters
@@ -346,7 +346,7 @@ Here's an example of customizing the Bootstrap grid at the large (`lg`) breakpoi
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Alignment
 
@@ -392,7 +392,7 @@ Use flexbox alignment utilities to vertically and horizontally align columns.
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 <div class="bd-example-row bd-example-row-flex-cols">
@@ -411,7 +411,7 @@ Use flexbox alignment utilities to vertically and horizontally align columns.
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Horizontal alignment
@@ -461,7 +461,7 @@ Use flexbox alignment utilities to vertically and horizontally align columns.
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### No gutters
@@ -494,7 +494,7 @@ In practice, here's how it looks. Note you can continue to use this with all oth
   <div class="col-6 col-md-4">.col-6 .col-md-4</div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Column wrapping
@@ -511,7 +511,7 @@ If more than 12 columns are placed within a single row, each group of extra colu
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Column breaks
@@ -533,7 +533,7 @@ Breaking columns to a new line in flexbox requires a small hack: add an element 
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 You may also apply this break at specific breakpoints with our [responsive display utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/display/).
@@ -553,14 +553,14 @@ You may also apply this break at specific breakpoints with our [responsive displ
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ## Reordering
 
 ### Order classes
 
-Use `.order-` classes for controlling the **visual order** of your content. These classes are responsive, so you can set the `order` by breakpoint (e.g., `.order-1.order-md-2`). Includes support for `1` through `12` across all five grid tiers.
+Use `.order-` classes for controlling the **visual order** of your content. These classes are responsive, so you can set the `order` by breakpoint (e.g., `.order-1.order-md-2`). _includess support for `1` through `12` across all five grid tiers.
 
 <div class="bd-example-row">
 {% capture example %}
@@ -578,7 +578,7 @@ Use `.order-` classes for controlling the **visual order** of your content. Thes
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 There are also responsive `.order-first` and `.order-last` classes that change the `order` of an element by applying `order: -1` and `order: 13` (`order: $columns + 1`), respectively. These classes can also be intermixed with the numbered `.order-*` classes as needed.
@@ -599,7 +599,7 @@ There are also responsive `.order-first` and `.order-last` classes that change t
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ### Offsetting columns
@@ -626,7 +626,7 @@ Move columns to the right using `.offset-md-*` classes. These classes increase t
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 In addition to column clearing at responsive breakpoints, you may need to reset offsets. See this in action in [the grid example]({{ site.baseurl }}/docs/{{ site.docs_version }}/examples/grid/).
@@ -644,7 +644,7 @@ In addition to column clearing at responsive breakpoints, you may need to reset 
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 #### Margin utilities
@@ -668,12 +668,12 @@ With the move to flexbox in v4, you can use margin utilities like `.mr-auto` to 
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ## Nesting
 
-To nest your content with the default grid, add a new `.row` and set of `.col-sm-*` columns within an existing `.col-sm-*` column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
+To nest your content with the default grid, add a new `.row` and set of `.col-sm-*` columns within an existing `.col-sm-*` column. Nested rows should _includes a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
 
 <div class="bd-example-row">
 {% capture example %}
@@ -693,7 +693,7 @@ To nest your content with the default grid, add a new `.row` and set of `.col-sm
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 </div>
 
 ## Sass mixins
@@ -735,14 +735,14 @@ Mixins are used in conjunction with the grid variables to generate semantic CSS 
 
 {% highlight scss %}
 // Creates a wrapper for a series of columns
-@include make-row();
+@_includes make-row();
 
 // Make the element grid-ready (applying everything but the width)
-@include make-col-ready();
-@include make-col($size, $columns: $grid-columns);
+@_includes make-col-ready();
+@_includes make-col($size, $columns: $grid-columns);
 
 // Get fancy by offsetting, or changing the sort order
-@include make-col-offset($size, $columns: $grid-columns);
+@_includes make-col-offset($size, $columns: $grid-columns);
 {% endhighlight %}
 
 ### Example usage
@@ -752,32 +752,32 @@ You can modify the variables to your own custom values, or just use the mixins w
 {% highlight scss %}
 .example-container {
   width: 800px;
-  @include make-container();
+  @_includes make-container();
 }
 
 .example-row {
-  @include make-row();
+  @_includes make-row();
 }
 
 .example-content-main {
-  @include make-col-ready();
+  @_includes make-col-ready();
 
-  @include media-breakpoint-up(sm) {
-    @include make-col(6);
+  @_includes media-breakpoint-up(sm) {
+    @_includes make-col(6);
   }
-  @include media-breakpoint-up(lg) {
-    @include make-col(8);
+  @_includes media-breakpoint-up(lg) {
+    @_includes make-col(8);
   }
 }
 
 .example-content-secondary {
-  @include make-col-ready();
+  @_includes make-col-ready();
 
-  @include media-breakpoint-up(sm) {
-    @include make-col(6);
+  @_includes media-breakpoint-up(sm) {
+    @_includes make-col(6);
   }
-  @include media-breakpoint-up(lg) {
-    @include make-col(4);
+  @_includes media-breakpoint-up(lg) {
+    @_includes make-col(4);
   }
 }
 {% endhighlight %}
@@ -790,7 +790,7 @@ You can modify the variables to your own custom values, or just use the mixins w
   </div>
 </div>
 {% endcapture %}
-{% include example.html content=example %}
+{% _includes example.html content=example %}
 
 ## Customizing the grid
 

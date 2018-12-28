@@ -26,7 +26,7 @@
     max-width: 100%;
     margin-bottom: 1rem;
 
-    @include media-breakpoint-down(md) {
+    @_includes media-breakpoint-down(md) {
       display: block;
       overflow-x: auto;
       -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
@@ -84,7 +84,7 @@
     margin-bottom: .25rem;
   }
 
-  @include media-breakpoint-up(lg) {
+  @_includes media-breakpoint-up(lg) {
     > ul,
     > ol,
     > p {
@@ -98,7 +98,7 @@
   margin-bottom: .5rem;
   font-weight: 300;
 
-  @include media-breakpoint-up(sm) {
+  @_includes media-breakpoint-up(sm) {
     font-size: 3rem;
   }
 }
@@ -107,7 +107,7 @@
   font-size: 1.125rem;
   font-weight: 300;
 
-  @include media-breakpoint-up(sm) {
+  @_includes media-breakpoint-up(sm) {
     max-width: 80%;
     margin-bottom: 1rem;
     font-size: 1.5rem;
